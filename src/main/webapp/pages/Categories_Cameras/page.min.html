@@ -1,0 +1,183 @@
+<style id="Categories_Cameras.css">
+
+</style>
+<script id="Categories_Cameras.js">
+Application.$controller("Categories_CamerasPageController", ["$scope", function ($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function () {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+    
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function () {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+
+</script>
+<script id="Categories_Cameras.variables.json">
+var _Categories_CamerasPage_Variables_ ={
+  "Product_camera" : {
+    "firstRow" : 0,
+    "isList" : false,
+    "inFlightBehavior" : "executeLast",
+    "package" : "com.eshop.eshopping.Product",
+    "startUpdate" : true,
+    "type" : "Product",
+    "ignoreCase" : false,
+    "propertiesMap" : {
+      "columns" : [ {
+        "hibernateType" : "integer",
+        "precision" : 19,
+        "isPrimaryKey" : true,
+        "isRelated" : false,
+        "length" : 255,
+        "columnName" : "ID",
+        "generator" : "identity",
+        "fieldName" : "id",
+        "type" : "integer",
+        "notNull" : true,
+        "defaultValue" : null,
+        "fullyQualifiedType" : "integer"
+      }, {
+        "hibernateType" : "string",
+        "precision" : 19,
+        "isPrimaryKey" : false,
+        "isRelated" : false,
+        "length" : 255,
+        "columnName" : "IMG_URL",
+        "generator" : "assigned",
+        "fieldName" : "imgUrl",
+        "type" : "string",
+        "notNull" : false,
+        "defaultValue" : null,
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "string",
+        "precision" : 19,
+        "isPrimaryKey" : false,
+        "isRelated" : false,
+        "length" : 255,
+        "columnName" : "CATEGORY",
+        "generator" : "assigned",
+        "fieldName" : "category",
+        "type" : "string",
+        "notNull" : true,
+        "defaultValue" : null,
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "double",
+        "precision" : 64,
+        "isPrimaryKey" : false,
+        "isRelated" : false,
+        "length" : 255,
+        "columnName" : "PRICE",
+        "generator" : "assigned",
+        "fieldName" : "price",
+        "type" : "double",
+        "notNull" : true,
+        "defaultValue" : null,
+        "fullyQualifiedType" : "double"
+      }, {
+        "hibernateType" : "string",
+        "precision" : 19,
+        "isPrimaryKey" : false,
+        "isRelated" : false,
+        "length" : 255,
+        "columnName" : "DESCRIPTION",
+        "generator" : "assigned",
+        "fieldName" : "description",
+        "type" : "string",
+        "notNull" : true,
+        "defaultValue" : null,
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "string",
+        "precision" : 19,
+        "isPrimaryKey" : false,
+        "isRelated" : false,
+        "length" : 255,
+        "columnName" : "NAME",
+        "generator" : "assigned",
+        "fieldName" : "name",
+        "type" : "string",
+        "notNull" : true,
+        "defaultValue" : null,
+        "fullyQualifiedType" : "string"
+      }, {
+        "hibernateType" : "boolean",
+        "precision" : 19,
+        "isPrimaryKey" : false,
+        "isRelated" : false,
+        "length" : 255,
+        "columnName" : "AVAILABILITY",
+        "generator" : "assigned",
+        "fieldName" : "availability",
+        "type" : "boolean",
+        "notNull" : true,
+        "defaultValue" : null,
+        "fullyQualifiedType" : "boolean"
+      } ],
+      "primaryKeys" : [ "id" ],
+      "tableType" : "TABLE",
+      "fullyQualifiedName" : "com.eshop.eshopping.Product",
+      "entityName" : "Product"
+    },
+    "matchMode" : "start",
+    "maxResults" : 6,
+    "transformationRequired" : false,
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "operation" : "read",
+    "category" : "wm.LiveVariable",
+    "autoUpdate" : true,
+    "dataBinding" : [ {
+      "target" : "category",
+      "value" : "Cameras",
+      "type" : "string"
+    } ],
+    "saveInPhonegap" : false,
+    "_id" : "wm-Product_camera-wm.LiveVariable-1449147857016",
+    "filterFields" : { },
+    "tableName" : "PRODUCT",
+    "designMaxResults" : 6,
+    "name" : "Product_camera",
+    "owner" : "Page",
+    "tableType" : "TABLE",
+    "liveSource" : "eshopping"
+  }
+}
+</script>
+<script id="Categories_Cameras.html" type="text/ng-template">
+<wm-page data-ng-controller="Categories_CamerasPageController" pagetitle="Categories Cameras" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="page_content1">
+            <wm-livelist listclass="list-group" name="livelist1" dataset="bind:Variables.Product_camera.dataSet" itemsperrow="3" navigation="Advanced" on-click="goToPage_Products">
+                <wm-listtemplate layout="thumbnail" name="listtemplate1">
+                    <wm-container class="thumbnail" name="container3" height="170px" marginright="5" marginleft="5">
+                        <wm-picture class="picture" shape="thumbnail" height="5em" name="picture2" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.Product_camera.dataSet.data[$i].imgUrl" width="5em"></wm-picture>
+                        <wm-container class="caption" data-template-ctr="true" name="container4">
+                            <wm-label width="100%" caption="bind:Variables.Product_camera.dataSet.name" name="label6" fontweight="bold"></wm-label>
+                            <wm-label width="100%" caption="bind:Variables.Product_camera.dataSet.data[$i].price | toCurrency: '$'" name="label4" fontweight="bold"></wm-label>
+                        </wm-container>
+                    </wm-container>
+                </wm-listtemplate>
+            </wm-livelist>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>
+</script>

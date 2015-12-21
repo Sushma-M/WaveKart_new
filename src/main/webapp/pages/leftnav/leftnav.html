@@ -1,0 +1,19 @@
+<wm-partial data-ng-controller="leftnavPageController" name="leftnav" type="left-panel">
+    <wm-nav name="leftnavigation" type="pills" layout="stacked">
+        <wm-nav-item name="list_latestUpdate">
+            <wm-anchor caption="Smartphones" name="Smartphones" iconclass="glyphicon glyphicon-phone" on-click="goToPage_Categories"></wm-anchor>
+        </wm-nav-item>
+        <wm-nav-item name="list_inTheNews">
+            <wm-anchor caption="Cameras" name="Cameras" iconclass="glyphicon glyphicon-camera" on-click="goToPage_Categories_Cameras"></wm-anchor>
+        </wm-nav-item>
+        <wm-nav-item name="list_share">
+            <wm-anchor caption="Laptops" name="Laptops" iconclass="fa fa-laptop" on-click="goToPage_Categories_laptop"></wm-anchor>
+        </wm-nav-item>
+        <wm-nav-item name="list_help">
+            <wm-anchor caption="Peripherals" name="supportButton" iconclass="glyphicon glyphicon-print" on-click="goToPage_Categories_periphrls"></wm-anchor>
+        </wm-nav-item>
+        <wm-nav-item name="nav_item5">
+            <wm-anchor name="Accessories" iconclass="glyphicon glyphicon-headphones" caption="Accessories" on-click="goToPage_Categories_accsries"></wm-anchor>
+        </wm-nav-item>
+    </wm-nav>
+</wm-partial>

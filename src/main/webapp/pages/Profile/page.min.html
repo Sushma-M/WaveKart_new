@@ -1,0 +1,326 @@
+<style id="Profile.css">
+
+</style>
+<script id="Profile.js">
+Application.$controller("ProfilePageController", ["$scope", function ($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function () {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+    
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function () {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+
+
+
+
+Application.$controller("UserGrid2Controller", ["$scope",
+	function($scope) {
+		"use strict";
+		$scope.ctrlScope = $scope;
+	}
+]);
+
+Application.$controller("UserLiveform3Controller", ["$scope",
+	function($scope) {
+		"use strict";
+		$scope.ctrlScope = $scope;
+	}
+]);
+</script>
+<script id="Profile.variables.json">
+var _ProfilePage_Variables_ ={
+  "UserProfile" : {
+    "firstRow" : 0,
+    "isList" : false,
+    "package" : "com.eshop.eshopping.User",
+    "startUpdate" : false,
+    "type" : "User",
+    "ignoreCase" : false,
+    "propertiesMap" : {
+      "primaryKeys" : [ "id" ],
+      "columns" : [ {
+        "precision" : 19,
+        "hibernateType" : "integer",
+        "isRelated" : false,
+        "isPrimaryKey" : true,
+        "length" : 255,
+        "generator" : "identity",
+        "columnName" : "ID",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "integer",
+        "fieldName" : "id",
+        "fullyQualifiedType" : "integer"
+      }, {
+        "precision" : 19,
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "LANDMARK",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "landmark",
+        "fullyQualifiedType" : "string"
+      }, {
+        "precision" : 19,
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 15,
+        "generator" : "assigned",
+        "columnName" : "PHONE",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "phone",
+        "fullyQualifiedType" : "string"
+      }, {
+        "precision" : 19,
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "PIN",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "pin",
+        "fullyQualifiedType" : "string"
+      }, {
+        "precision" : 19,
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "EMAIL",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "email",
+        "fullyQualifiedType" : "string"
+      }, {
+        "precision" : 19,
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "STREET",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "street",
+        "fullyQualifiedType" : "string"
+      }, {
+        "precision" : 19,
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "NAME",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "name",
+        "fullyQualifiedType" : "string"
+      }, {
+        "precision" : 19,
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "PRODUCT_BOUGHT",
+        "defaultValue" : null,
+        "notNull" : false,
+        "type" : "string",
+        "fieldName" : "productBought",
+        "fullyQualifiedType" : "string"
+      }, {
+        "precision" : 19,
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "PASSWORD",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "password",
+        "fullyQualifiedType" : "string"
+      }, {
+        "precision" : 19,
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "COUNTRY",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "country",
+        "fullyQualifiedType" : "string"
+      }, {
+        "precision" : 19,
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "CITY",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "city",
+        "fullyQualifiedType" : "string"
+      }, {
+        "precision" : 19,
+        "hibernateType" : "string",
+        "isRelated" : false,
+        "isPrimaryKey" : false,
+        "length" : 255,
+        "generator" : "assigned",
+        "columnName" : "ROLE",
+        "defaultValue" : null,
+        "notNull" : true,
+        "type" : "string",
+        "fieldName" : "role",
+        "fullyQualifiedType" : "string"
+      } ],
+      "tableType" : "TABLE",
+      "fullyQualifiedName" : "com.eshop.eshopping.User",
+      "entityName" : "User"
+    },
+    "transformationRequired" : false,
+    "dataSet" : {
+      "dataValue" : ""
+    },
+    "operation" : "read",
+    "saveInPhonegap" : false,
+    "_id" : "wm-UserProfile-wm.LiveVariable-1448969448290",
+    "tableName" : "USER",
+    "designMaxResults" : 10,
+    "name" : "UserProfile",
+    "liveSource" : "eshopping",
+    "inFlightBehavior" : "executeLast",
+    "inputFields" : { },
+    "maxResults" : 20,
+    "matchMode" : "start",
+    "category" : "wm.LiveVariable",
+    "autoUpdate" : true,
+    "dataBinding" : [ {
+      "target" : "id",
+      "value" : "bind:Variables.loggedInUser.dataSet.id",
+      "type" : "number"
+    } ],
+    "filterFields" : { },
+    "owner" : "Page",
+    "tableType" : "TABLE"
+  }
+}
+</script>
+<script id="Profile.html" type="text/ng-template">
+<wm-page name="page1" data-ng-controller="ProfilePageController" pagetitle="Profile">
+    <wm-header name="header1" content="header"></wm-header>
+    <wm-top-nav name="top_nav1" content="topnav"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-page-content name="page_content1" columnwidth="12">
+            <wm-livegrid name="UserLivegrid2" service="eshopping@User">
+                <wm-grid deleterow="true" updaterow="true" insertrow="true" gridfirstrowselect="true" readonlygrid="false" name="UserGrid2" dataset="bind:Variables.UserProfile.dataSet" show="false" shownavigation="false">
+                    <wm-grid-column binding="id" caption="Id" type="integer" primary-key="true" generator="identity" readonly="true" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                    <wm-grid-column binding="landmark" caption="Landmark" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                    <wm-grid-column binding="phone" caption="Phone" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                    <wm-grid-column binding="pin" caption="Pin" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                    <wm-grid-column binding="email" caption="Email" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                    <wm-grid-column binding="street" caption="Street" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                    <wm-grid-column binding="name" caption="Name" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                    <wm-grid-column binding="productBought" caption="Product Bought" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                    <wm-grid-column binding="password" caption="Password" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                    <wm-grid-column binding="country" caption="Country" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                    <wm-grid-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="glyphicon glyphicon-plus" action="addNewRow()"></wm-grid-action>
+                </wm-grid>
+                <wm-liveform novalidate="false" title="Profile" name="UserLiveform3" dataset="bind:Variables.UserProfile.dataSet" formlayout="inline" defaultmode="Edit" horizontalalign="left" paddingbottom="5" messagelayout="Inline" updatemessage="Your changes have been saved successfully"
+                errormessage="Invalid data provided">
+                    <wm-layoutgrid name="layoutgrid3">
+                        <wm-gridrow name="gridrow23">
+                            <wm-gridcolumn show="hide" name="gridcolumn23" columnwidth="12"></wm-gridcolumn>
+                            <wm-gridcolumn show="show" name="gridcolumn24" columnwidth="12">
+                                <wm-form-field display-name="Name" show="true" primary-key="false" generator="assigned" key="name" type="string" maxvalue="255" is-related="false" readonly="false" required="true" multiple="false" placeholder="Select value"
+                                regexp=".*" name="form_field1"></wm-form-field>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow24">
+                            <wm-gridcolumn show="show" name="gridcolumn25" columnwidth="12">
+                                <wm-form-field display-name="Phone Number" show="true" primary-key="false" generator="assigned" key="phone" type="string" maxvalue="15" is-related="false" readonly="false" required="true" multiple="false" placeholder="Select value"
+                                regexp=".*" name="form_field2"></wm-form-field>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow25">
+                            <wm-gridcolumn show="show" name="gridcolumn26" columnwidth="12">
+                                <wm-form-field display-name="Street Address" show="true" primary-key="false" generator="assigned" key="street" type="string" maxvalue="255" is-related="false" readonly="false" required="true" multiple="false" placeholder="Select value"
+                                regexp=".*" name="form_field3"></wm-form-field>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow26">
+                            <wm-gridcolumn show="show" name="gridcolumn27" columnwidth="12">
+                                <wm-form-field display-name="Landmark" show="true" primary-key="false" generator="assigned" key="landmark" type="string" maxvalue="255" is-related="false" readonly="false" required="true" multiple="false" placeholder="Select value"
+                                regexp=".*" name="form_field4"></wm-form-field>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow27">
+                            <wm-gridcolumn show="show" name="gridcolumn28" columnwidth="12">
+                                <wm-form-field display-name="City" show="true" primary-key="false" generator="assigned" key="city" type="string" maxvalue="255" is-related="false" readonly="false" required="true" multiple="false" placeholder="Select value"
+                                regexp=".*" name="form_field5"></wm-form-field>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow28">
+                            <wm-gridcolumn show="show" name="gridcolumn29" columnwidth="12">
+                                <wm-form-field display-name="Pin" show="true" primary-key="false" generator="assigned" key="pin" type="string" maxvalue="255" is-related="false" readonly="false" required="true" multiple="false" placeholder="Select value" regexp=".*"
+                                name="form_field6"></wm-form-field>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow29">
+                            <wm-gridcolumn show="show" name="gridcolumn30" columnwidth="12">
+                                <wm-form-field display-name="Country" show="true" primary-key="false" generator="assigned" key="country" type="string" maxvalue="255" is-related="false" readonly="false" required="true" multiple="false" placeholder="Select value"
+                                regexp=".*" name="form_field7"></wm-form-field>
+                            </wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow30">
+                            <wm-gridcolumn show="show" name="gridcolumn31" columnwidth="12"></wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow31">
+                            <wm-gridcolumn show="show" name="gridcolumn32" columnwidth="12"></wm-gridcolumn>
+                        </wm-gridrow>
+                        <wm-gridrow name="gridrow32">
+                            <wm-gridcolumn show="show" name="gridcolumn33" columnwidth="12"></wm-gridcolumn>
+                        </wm-gridrow>
+                    </wm-layoutgrid>
+                    <wm-form-action key="save" display-name="Save" show="true" class="form-save btn-success" iconclass="glyphicon glyphicon-save" type="submit" update-mode="true"></wm-form-action>
+                </wm-liveform>
+            </wm-livegrid>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer name="footer1" content="footer"></wm-footer>
+</wm-page>
+</script>

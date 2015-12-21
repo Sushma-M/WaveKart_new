@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.eshop.eshopping">
+  <class table="`PRODUCT`" name="com.eshop.eshopping.Product" entity-name="com.eshop.eshopping.Product" schema="PUBLIC">
+    <id name="id" type="integer">
+      <column name="`ID`" length="255" not-null="true" precision="19"/>
+      <generator class="identity"/>
+    </id>
+    <property name="imgUrl" type="string">
+      <column name="`IMG_URL`" length="255" not-null="false" precision="19"/>
+    </property>
+    <property name="category" type="string">
+      <column name="`CATEGORY`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="price" type="double">
+      <column name="`PRICE`" length="255" not-null="true" precision="64"/>
+    </property>
+    <property name="description" type="string">
+      <column name="`DESCRIPTION`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="name" type="string">
+      <column name="`NAME`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="availability" type="boolean">
+      <column name="`AVAILABILITY`" length="255" not-null="true" precision="19"/>
+    </property>
+    <set name="itemorders" table="ITEMORDER" inverse="true" lazy="true" fetch="select">
+      <key>
+        <column name="`PRODUCT_ID`"/>
+      </key>
+      <one-to-many class="Itemorder"/>
+    </set>
+    <set name="orderdetails" table="ORDERDETAIL" inverse="true" lazy="true" fetch="select">
+      <key>
+        <column name="`PRODUCT_ID`"/>
+      </key>
+      <one-to-many class="Orderdetail"/>
+    </set>
+  </class>
+  <class table="`ITEMORDER`" name="com.eshop.eshopping.Itemorder" entity-name="com.eshop.eshopping.Itemorder" schema="PUBLIC">
+    <id name="id" type="integer">
+      <column name="`ID`" length="255" not-null="true" precision="19"/>
+      <generator class="identity"/>
+    </id>
+    <property name="status" type="string">
+      <column name="`STATUS`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="quantity" type="integer">
+      <column name="`QUANTITY`" length="255" not-null="true" precision="19"/>
+    </property>
+    <many-to-one
+      name="product"
+      class="Product"
+      fetch="select">
+      <column name="`PRODUCT_ID`" length="255" not-null="true" precision="19"/>
+    </many-to-one>
+    <many-to-one
+      name="user"
+      class="User"
+      fetch="select">
+      <column name="`USER_ID`" length="255" not-null="true" precision="19"/>
+    </many-to-one>
+  </class>
+  <class table="`USER`" name="com.eshop.eshopping.User" entity-name="com.eshop.eshopping.User" schema="PUBLIC">
+    <id name="id" type="integer">
+      <column name="`ID`" length="255" not-null="true" precision="19"/>
+      <generator class="identity"/>
+    </id>
+    <property name="landmark" type="string">
+      <column name="`LANDMARK`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="phone" type="string">
+      <column name="`PHONE`" length="15" not-null="true" precision="19"/>
+    </property>
+    <property name="pin" type="string">
+      <column name="`PIN`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="email" type="string">
+      <column name="`EMAIL`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="street" type="string">
+      <column name="`STREET`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="name" type="string">
+      <column name="`NAME`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="productBought" type="string">
+      <column name="`PRODUCT_BOUGHT`" length="255" not-null="false" precision="19"/>
+    </property>
+    <property name="password" type="string">
+      <column name="`PASSWORD`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="country" type="string">
+      <column name="`COUNTRY`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="city" type="string">
+      <column name="`CITY`" length="255" not-null="true" precision="19"/>
+    </property>
+    <property name="role" type="string">
+      <column name="`ROLE`" length="255" not-null="true" precision="19"/>
+    </property>
+    <set name="itemorders" table="ITEMORDER" inverse="true" lazy="true" fetch="select">
+      <key>
+        <column name="`USER_ID`"/>
+      </key>
+      <one-to-many class="Itemorder"/>
+    </set>
+    <set name="productorders" table="PRODUCTORDER" inverse="true" lazy="true" fetch="select">
+      <key>
+        <column name="`USER_ID`"/>
+      </key>
+      <one-to-many class="Productorder"/>
+    </set>
+  </class>
+  <class table="`PRODUCTORDER`" name="com.eshop.eshopping.Productorder" entity-name="com.eshop.eshopping.Productorder" schema="PUBLIC">
+    <id name="id" type="integer">
+      <column name="`ID`" length="255" not-null="true" precision="19"/>
+      <generator class="identity"/>
+    </id>
+    <property name="status" type="string">
+      <column name="`STATUS`" length="255" not-null="true" precision="19"/>
+    </property>
+    <many-to-one
+      name="user"
+      class="User"
+      fetch="select">
+      <column name="`USER_ID`" length="255" not-null="true" precision="19"/>
+    </many-to-one>
+    <set name="orderdetails" table="ORDERDETAIL" inverse="true" lazy="true" fetch="select">
+      <key>
+        <column name="`ORDER_ID`"/>
+      </key>
+      <one-to-many class="Orderdetail"/>
+    </set>
+  </class>
+  <class table="`ORDERDETAIL`" name="com.eshop.eshopping.Orderdetail" entity-name="com.eshop.eshopping.Orderdetail" schema="PUBLIC">
+    <id name="id" type="integer">
+      <column name="`ID`" length="255" not-null="true" precision="19"/>
+      <generator class="identity"/>
+    </id>
+    <property name="quantity" type="integer">
+      <column name="`QUANTITY`" length="255" not-null="true" precision="19"/>
+    </property>
+    <many-to-one
+      name="product"
+      class="Product"
+      fetch="select">
+      <column name="`PRODUCT_ID`" length="255" not-null="true" precision="19"/>
+    </many-to-one>
+    <many-to-one
+      name="productorder"
+      class="Productorder"
+      fetch="select">
+      <column name="`ORDER_ID`" length="255" not-null="true" precision="19"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+<wm-page data-ng-controller="Product_searchPageController" pagetitle="Product Search" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="page_content1">
+            <wm-livelist listclass="media-list" name="livelist1" dataset="bind:Variables.static_product_data_forsearch.dataSet" paddingleft="20" paddingtop="20" paddingright="20" paddingbottom="20" margintop="20">
+                <wm-listtemplate layout="media" name="listtemplate1">
+                    <wm-container class="media-left" name="container4">
+                        <wm-picture class="media-object picture" shape="rounded" name="picture2" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.static_product_data_forsearch.dataSet.data[$i].imgUrl"
+                        height="15em"></wm-picture>
+                    </wm-container>
+                    <wm-container class="media-body" data-template-ctr="true" name="container5" paddingleft="10" paddingright="10">
+                        <wm-label width="100%" caption="bind:Variables.static_product_data_forsearch.dataSet.name" name="label7" fontsize="18" fontweight="bold" paddingtop="5" margintop="10" marginbottom="10"></wm-label>
+                        <wm-label width="100%" caption="bind:Variables.static_product_data_forsearch.dataSet.data[$i].description" name="label6" fontsize="15" margintop="10" marginbottom="10"></wm-label>
+                        <wm-label name="availabile" caption="Available" fontsize="18" show="bind:Variables.static_product_data_forsearch.dataSet.data[$i].availability" backgroundcolor="#088b47" color="#f0f2f1" paddingright="5" paddingleft="5"></wm-label>
+                        <wm-label name="OutofStock" caption="Out of Stcok" fontsize="18" show="bind:!Variables.static_product_data_forsearch.dataSet.data[$i].availability" color="#edf5f1" backgroundcolor="#cd292f" paddingleft="5" paddingright="5"></wm-label>
+                        <wm-label width="100%" caption="bind:&quot;Price: $&quot;+Variables.static_product_data_forsearch.dataSet.data[$i].price" name="label5" fontweight="bold" fontsize="15" margintop="10" marginbottom="10"></wm-label>
+                        <wm-button class="btn-default" caption="Add to Cart" type="button" name="AddtoCart" iconclass="fa fa-cart-plus" fontsize="20" backgroundcolor="#608ef1" show="bind:Variables.static_product_data_forsearch.dataSet.data[$i].availability"
+                        on-click="InsertCart"></wm-button>
+                        <wm-label name="id" caption="bind:Variables.static_product_data_forsearch.dataSet.data[$i].id" show="false"></wm-label>
+                    </wm-container>
+                </wm-listtemplate>
+            </wm-livelist>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>

@@ -1,0 +1,49 @@
+<wm-page name="page1" data-ng-controller="OrdersPageController" pagetitle="Orders">
+    <wm-header name="header1" content="header"></wm-header>
+    <wm-top-nav name="top_nav1" content="topnav"></wm-top-nav>
+    <wm-content name="content1_1">
+        <wm-content name="content1" height="100%">
+            <wm-page-content paddingleft="0" paddingright="0" paddingtop="0" paddingbottom="0" columnwidth="12" name="OrderPageContent">
+                <wm-label caption="No Orders" name="no_orders_text" marginunit="em" fontsize="2" fontunit="em" show="false"></wm-label>
+                <wm-label caption="My Orders" name="my_orders_text" marginunit="em" fontsize="2" fontunit="em" show="false"></wm-label>
+                <wm-layoutgrid name="layoutgrid1" class="well">
+                    <wm-gridrow name="row2">
+                        <wm-gridcolumn columnwidth="6" name="gridcolumn2">
+                            <wm-label name="order_items_name" caption="Product Name"></wm-label>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn horizontalalign="center" columnwidth="2" name="gridcolumn3">
+                            <wm-label name="order_items_quantity" caption="Quantity"></wm-label>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn horizontalalign="center" columnwidth="2" name="gridcolumn4">
+                            <wm-label name="order_items_status" caption="Status"></wm-label>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn horizontalalign="center" columnwidth="2" name="gridcolumn5"></wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+                <wm-livelist dataset="bind:Variables.EshoppingExecute_OrderedLists.dataSet" name="livelist2" listclass="list-group" itemclass="list-group-items">
+                    <wm-listtemplate name="listtemplate2" layout="blank">
+                        <wm-container name="container4" class="blank" data-template-ctr="true">
+                            <wm-layoutgrid name="layoutgrid2" class="well">
+                                <wm-gridrow name="gridrow2">
+                                    <wm-gridcolumn name="gridcolumn5_1" columnwidth="6">
+                                        <wm-label name="label14" width="100%" caption="bind:Variables.EshoppingExecute_OrderedLists.dataSet.NAME"></wm-label>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn name="gridcolumn6" horizontalalign="center" columnwidth="2">
+                                        <wm-label name="label18" width="100%" caption="bind:Variables.EshoppingExecute_OrderedLists.dataSet.QUANTITY"></wm-label>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn name="gridcolumn7" horizontalalign="center" columnwidth="2">
+                                        <wm-label name="label17" width="100%" caption="bind:Variables.EshoppingExecute_OrderedLists.dataSet.STATUS"></wm-label>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn name="gridcolumn8" horizontalalign="center" columnwidth="2">
+                                        <wm-button fontsize="15" fontweight="bold" iconposition="top" textalign="center" name="OrderCancel" class="btn-default" caption="" type="button" hint="Cancel Order" iconclass="fa fa-close" height="36" width="34" show="bind:Variables.EshoppingExecute_OrderedLists.dataSet.STATUS!='Cancelled'"
+                                        on-click="updateOrderToCancel"></wm-button>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-container>
+                    </wm-listtemplate>
+                </wm-livelist>
+            </wm-page-content>
+        </wm-content>
+    </wm-content>
+</wm-page>

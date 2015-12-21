@@ -1,0 +1,58 @@
+<wm-page name="page1" data-ng-controller="CartPageController" pagetitle="Cart">
+    <wm-header name="header1" content="header"></wm-header>
+    <wm-top-nav name="top_nav1" content="topnav"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-page-content name="page_content1" columnwidth="12">
+            <wm-layoutgrid name="layoutgrid1" show="true">
+                <wm-gridrow name="gridrow1">
+                    <wm-gridcolumn name="gridcolumn1" columnwidth="8">
+                        <wm-layoutgrid name="layoutgrid2" show="true">
+                            <wm-gridrow name="gridrow4">
+                                <wm-gridcolumn name="gridcolumn10" columnwidth="2"></wm-gridcolumn>
+                                <wm-gridcolumn name="gridcolumn11" columnwidth="6">
+                                    <wm-label caption="Description" name="label2"></wm-label>
+                                </wm-gridcolumn>
+                                <wm-gridcolumn name="gridcolumn12" columnwidth="2">
+                                    <wm-label caption="Price ($)" name="label1"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                        <wm-livelist dataset="bind:Variables.cart.dataSet" name="livelist1" listclass="list-group" itemclass="list-group-item" show="true">
+                            <wm-listtemplate name="listtemplate1" layout="blank">
+                                <wm-container name="container1" class="blank" data-template-ctr="true">
+                                    <wm-layoutgrid name="layoutgrid4">
+                                        <wm-gridrow name="gridrow10">
+                                            <wm-gridcolumn name="gridcolumn28" columnwidth="2">
+                                                <wm-picture picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.cart.dataSet.data[$i].product.imgUrl" name="picture1" height="5em"></wm-picture>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn name="gridcolumn29" columnwidth="6">
+                                                <wm-label caption="bind:Variables.cart.dataSet.data[$i].product.name" name="label8"></wm-label>
+                                                <wm-label caption="bind:Variables.cart.dataSet.data[$i].product.description" name="label9"></wm-label>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn name="gridcolumn30" columnwidth="2">
+                                                <wm-label name="label7" width="100%" caption="bind:Variables.cart.dataSet.data[$i].product.price"></wm-label>
+                                            </wm-gridcolumn>
+                                            <wm-gridcolumn name="gridcolumn37" columnwidth="2">
+                                                <wm-button iconclass="glyphicon glyphicon-remove" name="button1" class="btn-default" caption="" type="button" on-click="DeleteCart;cart"></wm-button>
+                                            </wm-gridcolumn>
+                                        </wm-gridrow>
+                                    </wm-layoutgrid>
+                                </wm-container>
+                            </wm-listtemplate>
+                        </wm-livelist>
+                    </wm-gridcolumn>
+                    <wm-gridcolumn name="gridcolumn3" columnwidth="4">
+                        <wm-container name="container2" show="true">
+                            <wm-label width="25%" caption="Total Items:" name="label10"></wm-label>
+                            <wm-label caption="bind:Variables.EshoppingExecute_Total_InCart.dataSet.content[$i].TOTAL" width="72%" name="label11"></wm-label>
+                            <wm-label caption="Total Price:" width="25%" name="label12"></wm-label>
+                            <wm-label caption="bind:Variables.EshoppingExecute_Total_Price.dataSet[$i].C1" width="72%" name="label13"></wm-label>
+                            <wm-button backgroundcolor="#5B89DB" bordercolor="#467AD6" iconclass="glyphicon glyphicon-transfer" name="button2" class="btn-default" caption="Checkout" type="button" on-click="EshoppingExecuteOrdered;EshoppingExecute_OrderedLists"></wm-button>
+                        </wm-container>
+                    </wm-gridcolumn>
+                </wm-gridrow>
+            </wm-layoutgrid>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer name="footer1" content="footer"></wm-footer>
+</wm-page>

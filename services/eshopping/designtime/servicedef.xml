@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="eshopping" type="DataService" springFile="eshopping.spring.xml">
+    <operation operationType="nativequery" name="Ordered">
+        <parameter name="data" typeRef="java.lang.String" isList="false"/>
+        <parameter name="data2" typeRef="java.lang.String" isList="false"/>
+        <return typeRef="eshoppingOrderedrtnType" isList="false"/>
+    </operation>
+    <operation operationType="nativequery" name="_OrderedLists">
+        <return typeRef="eshopping_OrderedListsrtnType" isList="false"/>
+    </operation>
+    <operation operationType="nativequery" name="_Total_Price">
+        <parameter name="data" typeRef="java.lang.String" isList="false"/>
+        <return typeRef="eshopping_Total_PricertnType" isList="false"/>
+    </operation>
+    <operation operationType="nativequery" name="cancelled">
+        <parameter name="data" typeRef="java.lang.String" isList="false"/>
+        <parameter name="data1" typeRef="java.lang.Integer" isList="false"/>
+        <return typeRef="eshoppingcancelledrtnType" isList="false"/>
+    </operation>
+    <operation operationType="nativequery" name="_Total_InCart">
+        <return typeRef="eshopping_Total_InCartrtnType" isList="false"/>
+    </operation>
+    <dataobjects>
+        <dataobject javaType="com.eshop.eshopping.Product">
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="imgUrl" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="category" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="price" typeRef="java.lang.Double" isList="false" allowNull="false"/>
+            <element name="description" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="name" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="availability" typeRef="java.lang.Boolean" isList="false" allowNull="false"/>
+            <element name="itemorders" typeRef="com.eshop.eshopping.Itemorder" isList="true" allowNull="true"/>
+            <element name="orderdetails" typeRef="com.eshop.eshopping.Orderdetail" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.eshop.eshopping.Itemorder">
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="product" typeRef="com.eshop.eshopping.Product" isList="false" allowNull="false"/>
+            <element name="user" typeRef="com.eshop.eshopping.User" isList="false" allowNull="false"/>
+            <element name="status" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="quantity" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="com.eshop.eshopping.User">
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="landmark" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="phone" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="pin" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="email" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="street" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="name" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="productBought" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="password" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="country" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="city" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="role" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="itemorders" typeRef="com.eshop.eshopping.Itemorder" isList="true" allowNull="true"/>
+            <element name="productorders" typeRef="com.eshop.eshopping.Productorder" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.eshop.eshopping.Productorder">
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="user" typeRef="com.eshop.eshopping.User" isList="false" allowNull="false"/>
+            <element name="status" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="orderdetails" typeRef="com.eshop.eshopping.Orderdetail" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.eshop.eshopping.Orderdetail">
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="product" typeRef="com.eshop.eshopping.Product" isList="false" allowNull="false"/>
+            <element name="productorder" typeRef="com.eshop.eshopping.Productorder" isList="false" allowNull="false"/>
+            <element name="quantity" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="eshoppingOrderedrtnType"/>
+        <dataobject javaType="eshopping_OrderedListsrtnType">
+            <element name="NAME" typeRef="java.lang.String"/>
+            <element name="PID" typeRef="java.lang.Integer"/>
+            <element name="ID" typeRef="java.lang.Integer"/>
+            <element name="STATUS" typeRef="java.lang.String"/>
+            <element name="QUANTITY" typeRef="java.lang.Integer"/>
+        </dataobject>
+        <dataobject javaType="eshopping_Total_PricertnType">
+            <element name="C1" typeRef="java.lang.String"/>
+        </dataobject>
+        <dataobject javaType="eshoppingcancelledrtnType"/>
+        <dataobject javaType="eshopping_Total_InCartrtnType">
+            <element name="TOTAL" typeRef="java.math.BigInteger"/>
+        </dataobject>
+    </dataobjects>
+</service>

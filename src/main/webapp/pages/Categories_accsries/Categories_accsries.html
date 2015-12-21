@@ -1,0 +1,21 @@
+<wm-page data-ng-controller="Categories_accsriesPageController" pagetitle="Categories Accsries" name="page1">
+    <wm-header content="header" name="header1"></wm-header>
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav>
+    <wm-content name="content1">
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel>
+        <wm-page-content columnwidth="10" name="page_content1">
+            <wm-livelist listclass="list-group" name="livelist1" itemsperrow="3" dataset="bind:Variables.Product_accesories.dataSet" navigation="Advanced" on-click="goToPage_Products">
+                <wm-listtemplate layout="thumbnail" name="listtemplate1">
+                    <wm-container class="thumbnail" name="container3" height="170px" marginright="5" marginleft="5">
+                        <wm-picture class="picture" shape="thumbnail" height="5em" name="picture2" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.Product_accesories.dataSet.data[$i].imgUrl" width="5em"></wm-picture>
+                        <wm-container class="caption" data-template-ctr="true" name="container4">
+                            <wm-label width="100%" caption="bind:Variables.Product_accesories.dataSet.name" name="label6" fontweight="bold"></wm-label>
+                            <wm-label width="100%" caption="bind:Variables.Product_accesories.dataSet.data[$i].price | toCurrency: '$'" name="label4" fontweight="bold"></wm-label>
+                        </wm-container>
+                    </wm-container>
+                </wm-listtemplate>
+            </wm-livelist>
+        </wm-page-content>
+    </wm-content>
+    <wm-footer content="footer" name="footer1"></wm-footer>
+</wm-page>
