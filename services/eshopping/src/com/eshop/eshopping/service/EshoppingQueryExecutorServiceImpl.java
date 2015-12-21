@@ -40,13 +40,6 @@ public class EshoppingQueryExecutorServiceImpl implements EshoppingQueryExecutor
 	}
 	@Transactional(value = "eshoppingTransactionManager")
 	@Override
-	public Page<Object> execute_OrderedLists(Pageable pageable)
-	throws QueryParameterMismatchException{
-        Map<String, Object> params = new HashMap<String, Object>();
-        return queryExecutor.executeNamedQuery("_OrderedLists", params, pageable);
-	}
-	@Transactional(value = "eshoppingTransactionManager")
-	@Override
 	public Page<Object> execute_Total_Price(Pageable pageable, java.lang.String data)
 	throws QueryParameterMismatchException{
         Map<String, Object> params = new HashMap<String, Object>();
@@ -68,6 +61,14 @@ public class EshoppingQueryExecutorServiceImpl implements EshoppingQueryExecutor
 	throws QueryParameterMismatchException{
         Map<String, Object> params = new HashMap<String, Object>();
         return queryExecutor.executeNamedQuery("_Total_InCart", params, pageable);
+	}
+	@Transactional(value = "eshoppingTransactionManager")
+	@Override
+	public Page<Object> execute_OrderedLists(Pageable pageable, java.lang.Integer LoggedinUserID)
+	throws QueryParameterMismatchException{
+        Map<String, Object> params = new HashMap<String, Object>();
+        params.put("LoggedinUserID", LoggedinUserID);
+        return queryExecutor.executeNamedQuery("_OrderedLists", params, pageable);
 	}
 
 	@Transactional(value = "eshoppingTransactionManager")

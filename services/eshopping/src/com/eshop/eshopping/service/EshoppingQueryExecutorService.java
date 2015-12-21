@@ -13,10 +13,10 @@ import com.wavemaker.runtime.data.exception.QueryParameterMismatchException;
 
 public interface EshoppingQueryExecutorService {
 	int executeOrdered(  java.lang.String data,  java.lang.String data2) throws QueryParameterMismatchException;
-    Page<Object> execute_OrderedLists(Pageable pageable) throws QueryParameterMismatchException;
     Page<Object> execute_Total_Price(Pageable pageable, java.lang.String data) throws QueryParameterMismatchException;
 	int executeCancelled(  java.lang.String data,  java.lang.Integer data1) throws QueryParameterMismatchException;
     Page<Object> execute_Total_InCart(Pageable pageable) throws QueryParameterMismatchException;
+    Page<Object> execute_OrderedLists(Pageable pageable, java.lang.Integer LoggedinUserID) throws QueryParameterMismatchException;
 
 	
 	Page<Object> executeWMCustomQuerySelect(CustomQuery query, Pageable pageable) ;

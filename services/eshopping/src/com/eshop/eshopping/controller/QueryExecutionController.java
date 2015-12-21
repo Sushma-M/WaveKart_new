@@ -38,8 +38,8 @@ public class QueryExecutionController {
 	@ApiOperation(value = "Process request to execute queries")
 	@RequestMapping(value = "/queries/Ordered", method = RequestMethod.PUT,consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
 	public int executeOrdered(
-			@RequestParam(value="data", required=false) java.lang.String data,
-			@RequestParam(value="data2", required=false) java.lang.String data2
+	       @RequestParam(value="data", required=false) java.lang.String data,
+	       @RequestParam(value="data2", required=false) java.lang.String data2
 		)
  throws QueryParameterMismatchException{
 			LOGGER.debug("Executing named query Ordered");
@@ -48,20 +48,9 @@ public class QueryExecutionController {
 		return result;
 	}
 	@ApiOperation(value = "Process request to execute queries")
-	@RequestMapping(value = "/queries/_OrderedLists", method = RequestMethod.GET)
-	public Page<Object> execute_OrderedLists(
-		 Pageable pageable)
-	    {
-			LOGGER.debug("Executing named query _OrderedLists");
-
-		Page<Object> result = queryService.execute_OrderedLists(pageable);
-		LOGGER.debug("got the result of named query {}", result);
-		return result;
-	}
-	@ApiOperation(value = "Process request to execute queries")
 	@RequestMapping(value = "/queries/_Total_Price", method = RequestMethod.GET)
 	public Page<Object> execute_Total_Price(
-			@RequestParam(value="data", required=false) java.lang.String data,
+			 @RequestParam(value="data", required=false) java.lang.String data,
 		 Pageable pageable)
 	     throws QueryParameterMismatchException{
 			LOGGER.debug("Executing named query _Total_Price");
@@ -73,8 +62,8 @@ public class QueryExecutionController {
 	@ApiOperation(value = "Process request to execute queries")
 	@RequestMapping(value = "/queries/cancelled", method = RequestMethod.PUT,consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
 	public int executeCancelled(
-			@RequestParam(value="data", required=false) java.lang.String data,
-			@RequestParam(value="data1", required=false) java.lang.Integer data1
+	       @RequestParam(value="data", required=false) java.lang.String data,
+	       @RequestParam(value="data1", required=false) java.lang.Integer data1
 		)
  throws QueryParameterMismatchException{
 			LOGGER.debug("Executing named query cancelled");
@@ -90,6 +79,18 @@ public class QueryExecutionController {
 			LOGGER.debug("Executing named query _Total_InCart");
 
 		Page<Object> result = queryService.execute_Total_InCart(pageable);
+		LOGGER.debug("got the result of named query {}", result);
+		return result;
+	}
+	@ApiOperation(value = "Process request to execute queries")
+	@RequestMapping(value = "/queries/_OrderedLists", method = RequestMethod.GET)
+	public Page<Object> execute_OrderedLists(
+			 @RequestParam(value="LoggedinUserID", required=false) java.lang.Integer LoggedinUserID,
+		 Pageable pageable)
+	     throws QueryParameterMismatchException{
+			LOGGER.debug("Executing named query _OrderedLists");
+
+		Page<Object> result = queryService.execute_OrderedLists(pageable, LoggedinUserID);
 		LOGGER.debug("got the result of named query {}", result);
 		return result;
 	}

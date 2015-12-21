@@ -1,2771 +1,2939 @@
 {
-  "static_product_data_forsearch" : {
-    "isList" : false,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12364",
-    "bindCount" : -2,
-    "inFlightBehavior" : "executeLast",
-    "package" : "com.eshop.eshopping.Product",
-    "ignoreCase" : false,
-    "type" : "Product",
-    "startUpdate" : true,
-    "propertiesMap" : {
-      "columns" : [ {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : true,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "ID",
-        "generator" : "identity",
-        "fieldName" : "id",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "IMG_URL",
-        "generator" : "assigned",
-        "fieldName" : "imgUrl",
-        "type" : "string",
-        "notNull" : false,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "CATEGORY",
-        "generator" : "assigned",
-        "fieldName" : "category",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "double",
-        "precision" : 64,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "PRICE",
-        "generator" : "assigned",
-        "fieldName" : "price",
-        "type" : "double",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "double"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "DESCRIPTION",
-        "generator" : "assigned",
-        "fieldName" : "description",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "NAME",
-        "generator" : "assigned",
-        "fieldName" : "name",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "boolean",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "AVAILABILITY",
-        "generator" : "assigned",
-        "fieldName" : "availability",
-        "type" : "boolean",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "boolean"
-      } ],
-      "primaryKeys" : [ "id" ],
-      "tableType" : "TABLE",
-      "fullyQualifiedName" : "com.eshop.eshopping.Product",
-      "entityName" : "Product"
-    },
-    "maxResults" : 20,
-    "matchMode" : "start",
-    "transformationRequired" : false,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "read",
-    "category" : "wm.LiveVariable",
-    "autoUpdate" : true,
-    "saveInPhonegap" : false,
-    "dataBinding" : [ {
-      "target" : "name",
-      "value" : "bind:Widgets.header1.Widgets.productSearch.query",
-      "type" : "string"
-    } ],
-    "_id" : "wm-static_product_data_forsearch-Product-wm.LiveVariable-1449752030516",
-    "filterFields" : { },
-    "tableName" : "PRODUCT",
-    "designMaxResults" : 10,
-    "name" : "static_product_data_forsearch",
-    "owner" : "App",
-    "tableType" : "TABLE",
-    "liveSource" : "eshopping"
-  },
-  "Static_Product_data" : {
-    "isList" : false,
-    "category" : "wm.Variable",
-    "$$hashKey" : "object:12362",
-    "dataBinding" : [ {
-      "isList" : false,
-      "target" : "imgUrl",
-      "value" : "bind:Widgets.livelist1.selecteditem.imgUrl",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "id",
-      "value" : "bind:Widgets.livelist1.selecteditem.id",
-      "type" : "java.lang.Integer"
-    }, {
-      "isList" : false,
-      "target" : "category",
-      "value" : "bind:Widgets.livelist1.selecteditem.category",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "price",
-      "value" : "bind:Widgets.livelist1.selecteditem.price",
-      "type" : "java.lang.Double"
-    }, {
-      "isList" : false,
-      "target" : "description",
-      "value" : "bind:Widgets.livelist1.selecteditem.description",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "name",
-      "value" : "bind:Widgets.livelist1.selecteditem.name",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "availability",
-      "value" : "bind:Widgets.livelist1.selecteditem.availability",
-      "type" : "java.lang.Boolean"
-    } ],
-    "saveInPhonegap" : false,
-    "_id" : "wm-Static_Product_data-wm.Variable-1450076864751",
-    "name" : "Static_Product_data",
-    "owner" : "App",
-    "type" : "com.eshop.eshopping.Product",
-    "dataSet" : {
-      "imgUrl" : "",
-      "id" : "",
-      "category" : "",
-      "orderdetails" : [ {
-        "product" : { },
-        "id" : "",
-        "productorder" : {
-          "id" : "",
-          "orderdetails" : [ { } ],
-          "status" : "",
-          "user" : {
-            "phone" : "",
-            "street" : "",
-            "productBought" : "",
-            "password" : "",
-            "itemorders" : [ {
-              "product" : { },
-              "id" : "",
-              "status" : "",
-              "quantity" : "",
-              "user" : { }
-            } ],
-            "country" : "",
-            "city" : "",
-            "id" : "",
-            "landmark" : "",
-            "pin" : "",
-            "email" : "",
-            "productorders" : [ { } ],
-            "name" : "",
-            "role" : ""
-          }
-        },
-        "quantity" : ""
-      } ],
-      "price" : "",
-      "description" : "",
-      "name" : "",
-      "itemorders" : [ { } ],
-      "availability" : ""
-    }
-  },
-  "logoutVariable" : {
-    "category" : "wm.LogoutVariable",
-    "$$hashKey" : "object:12360",
-    "saveInPhonegap" : false,
-    "_id" : "wm-logoutVariable-wm.LogoutVariable-1448969207396",
-    "inFlightBehavior" : "executeLast",
-    "name" : "logoutVariable",
-    "owner" : "App",
-    "onSuccess" : "goToPage_Main",
-    "type" : "string",
-    "redirectTo" : "index.html",
-    "transformationRequired" : false,
-    "useDefaultSuccessHandler" : true
-  },
-  "EshoppingExecuteCancelled" : {
-    "isList" : false,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12350",
-    "inFlightBehavior" : "executeLast",
-    "wmServiceOperationInfo" : {
-      "httpMethod" : "put",
-      "relativePath" : "/eshopping/queryExecutor/queries/cancelled",
-      "name" : "executeCancelled",
-      "parameters" : [ {
-        "name" : "data",
-        "parameterType" : "query",
-        "type" : "string"
-      }, {
-        "name" : "data1",
-        "parameterType" : "query",
-        "type" : "integer"
-      } ],
-      "consumes" : [ "application/x-www-form-urlencoded" ]
-    },
-    "serviceType" : "DataService",
-    "startUpdate" : false,
-    "type" : "eshoppingcancelledrtnType",
-    "transformationRequired" : false,
-    "maxResults" : 20,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "executeCancelled",
-    "category" : "wm.ServiceVariable",
-    "autoUpdate" : false,
-    "saveInPhonegap" : false,
-    "dataBinding" : [ {
-      "target" : "data",
-      "value" : "Cancelled",
-      "type" : "string"
-    }, {
-      "target" : "data1",
-      "value" : "bind:Widgets.livelist2.selecteditem.id",
-      "type" : "integer"
-    } ],
-    "_id" : "wm-EshoppingExecuteCancelled-wm.ServiceVariable-1450089884879",
-    "operationType" : "put",
-    "isDefault" : true,
-    "designMaxResults" : 10,
-    "name" : "EshoppingExecuteCancelled",
-    "service" : "eshopping",
-    "owner" : "App"
-  },
-  "goToPage_Product_search" : {
-    "operation" : "gotoPage",
-    "pageName" : "Product_search",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Product_search-wm.NavigationVariable-1449751821176",
-    "name" : "goToPage_Product_search",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "hashredirect" : {
-    "isList" : false,
-    "category" : "wm.Variable",
-    "dataBinding" : [ ],
-    "saveInPhonegap" : false,
-    "_id" : "wm-hashredirect-wm.Variable-1450268290392",
-    "name" : "hashredirect",
-    "owner" : "App",
-    "type" : "string",
-    "dataSet" : {
-      "dataValue" : ""
-    }
-  },
-  "goToPage_Orders" : {
-    "operation" : "gotoPage",
-    "pageName" : "Orders",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Orders-wm.NavigationVariable-1448960423563",
-    "name" : "goToPage_Orders",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "EshoppingOrderdetailData" : {
-    "isList" : true,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12353",
-    "bindCount" : 2,
-    "package" : "com.eshop.eshopping.Orderdetail",
-    "ignoreCase" : false,
-    "type" : "Orderdetail",
-    "startUpdate" : true,
-    "propertiesMap" : {
-      "columns" : [ {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : true,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "ID",
-        "generator" : "identity",
-        "fieldName" : "id",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      }, {
-        "relatedTableName" : "PRODUCTORDER",
-        "isList" : false,
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "columns" : [ {
-          "hibernateType" : "integer",
-          "precision" : 19,
-          "isPrimaryKey" : true,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "ID",
-          "generator" : "identity",
-          "fieldName" : "id",
-          "type" : "integer",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "integer"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "STATUS",
-          "generator" : "assigned",
-          "fieldName" : "status",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "integer",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : true,
-          "length" : 255,
-          "columnName" : "USER_ID",
-          "generator" : "assigned",
-          "fieldName" : "user",
-          "type" : "integer",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "integer"
-        } ],
-        "relatedFieldName" : "productorder.id",
-        "type" : "integer",
-        "fullyQualifiedType" : "integer",
-        "relatedEntityName" : "Productorder",
-        "isPrimaryKey" : false,
-        "isRelated" : true,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "ORDER_ID",
-        "defaultValue" : null,
-        "notNull" : true,
-        "fieldName" : "productorder"
-      }, {
-        "relatedTableName" : "PRODUCT",
-        "isList" : false,
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "columns" : [ {
-          "hibernateType" : "integer",
-          "precision" : 19,
-          "isPrimaryKey" : true,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "ID",
-          "generator" : "identity",
-          "fieldName" : "id",
-          "type" : "integer",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "integer"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "IMG_URL",
-          "generator" : "assigned",
-          "fieldName" : "imgUrl",
-          "type" : "string",
-          "notNull" : false,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "CATEGORY",
-          "generator" : "assigned",
-          "fieldName" : "category",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "double",
-          "precision" : 64,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PRICE",
-          "generator" : "assigned",
-          "fieldName" : "price",
-          "type" : "double",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "double"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "DESCRIPTION",
-          "generator" : "assigned",
-          "fieldName" : "description",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "NAME",
-          "generator" : "assigned",
-          "fieldName" : "name",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "boolean",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "AVAILABILITY",
-          "generator" : "assigned",
-          "fieldName" : "availability",
-          "type" : "boolean",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "boolean"
-        } ],
-        "relatedFieldName" : "product.id",
-        "type" : "integer",
-        "fullyQualifiedType" : "integer",
-        "relatedEntityName" : "Product",
-        "isPrimaryKey" : false,
-        "isRelated" : true,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "PRODUCT_ID",
-        "defaultValue" : null,
-        "notNull" : true,
-        "fieldName" : "product"
-      }, {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "QUANTITY",
-        "generator" : "assigned",
-        "fieldName" : "quantity",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      } ],
-      "primaryKeys" : [ "id" ],
-      "tableType" : "TABLE",
-      "fullyQualifiedName" : "com.eshop.eshopping.Orderdetail",
-      "entityName" : "Orderdetail"
-    },
-    "transformationRequired" : false,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "read",
-    "saveInPhonegap" : false,
-    "_id" : "wm-EshoppingOrderdetailData-wm.LiveVariable-1448967110392",
-    "isDefault" : true,
-    "tableName" : "ORDERDETAIL",
-    "designMaxResults" : 10,
-    "name" : "EshoppingOrderdetailData",
-    "relatedTables" : [ {
-      "relationName" : "product",
-      "package" : "com.eshop.eshopping.Orderdetail",
-      "watchOn" : "EshoppingProductData",
-      "columnName" : "product",
-      "type" : "Product"
-    }, {
-      "relationName" : "productorder",
-      "package" : "com.eshop.eshopping.Orderdetail",
-      "watchOn" : "EshoppingProductorderData",
-      "columnName" : "productorder",
-      "type" : "Productorder"
-    } ],
-    "liveSource" : "eshopping",
-    "dbSystem" : "HSQLDB",
-    "inFlightBehavior" : "executeLast",
-    "properties" : [ "product", "productorder" ],
-    "matchMode" : "start",
-    "maxResults" : 20,
-    "category" : "wm.LiveVariable",
-    "autoUpdate" : true,
-    "dataBinding" : [ ],
-    "owner" : "App",
-    "tableType" : "TABLE"
-  },
-  "goToPage_Cart" : {
-    "operation" : "gotoPage",
-    "pageName" : "Cart",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Cart-wm.NavigationVariable-1448960328426",
-    "name" : "goToPage_Cart",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "EshoppingProductData" : {
-    "isList" : true,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12354",
-    "bindCount" : 1,
-    "package" : "com.eshop.eshopping.Product",
-    "ignoreCase" : false,
-    "type" : "Product",
-    "startUpdate" : true,
-    "propertiesMap" : {
-      "columns" : [ {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : true,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "ID",
-        "generator" : "identity",
-        "fieldName" : "id",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "IMG_URL",
-        "generator" : "assigned",
-        "fieldName" : "imgUrl",
-        "type" : "string",
-        "notNull" : false,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "CATEGORY",
-        "generator" : "assigned",
-        "fieldName" : "category",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "double",
-        "precision" : 64,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "PRICE",
-        "generator" : "assigned",
-        "fieldName" : "price",
-        "type" : "double",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "double"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "DESCRIPTION",
-        "generator" : "assigned",
-        "fieldName" : "description",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "NAME",
-        "generator" : "assigned",
-        "fieldName" : "name",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "boolean",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "AVAILABILITY",
-        "generator" : "assigned",
-        "fieldName" : "availability",
-        "type" : "boolean",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "boolean"
-      } ],
-      "primaryKeys" : [ "id" ],
-      "tableType" : "TABLE",
-      "fullyQualifiedName" : "com.eshop.eshopping.Product",
-      "entityName" : "Product"
-    },
-    "transformationRequired" : false,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "read",
-    "saveInPhonegap" : false,
-    "_id" : "wm-EshoppingProductData-wm.LiveVariable-1448967110393",
-    "isDefault" : true,
-    "tableName" : "PRODUCT",
-    "designMaxResults" : 1000,
-    "name" : "EshoppingProductData",
-    "liveSource" : "eshopping",
-    "dbSystem" : "HSQLDB",
-    "inFlightBehavior" : "executeLast",
-    "maxResults" : 1000,
-    "matchMode" : "start",
-    "category" : "wm.LiveVariable",
-    "autoUpdate" : false,
-    "dataBinding" : [ ],
-    "filterFields" : { },
-    "owner" : "App",
-    "tableType" : "TABLE"
-  },
-  "goToPage_Main" : {
-    "operation" : "gotoPage",
-    "pageName" : "Main",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Main-wm.NavigationVariable1389180517517",
-    "name" : "goToPage_Main",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "Product_obj" : {
-    "isList" : false,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12361",
-    "inFlightBehavior" : "executeLast",
-    "package" : "com.eshop.eshopping.Product",
-    "ignoreCase" : false,
-    "type" : "Product",
-    "startUpdate" : true,
-    "propertiesMap" : {
-      "columns" : [ {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : true,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "ID",
-        "generator" : "identity",
-        "fieldName" : "id",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "IMG_URL",
-        "generator" : "assigned",
-        "fieldName" : "imgUrl",
-        "type" : "string",
-        "notNull" : false,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "CATEGORY",
-        "generator" : "assigned",
-        "fieldName" : "category",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "double",
-        "precision" : 64,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "PRICE",
-        "generator" : "assigned",
-        "fieldName" : "price",
-        "type" : "double",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "double"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "DESCRIPTION",
-        "generator" : "assigned",
-        "fieldName" : "description",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "NAME",
-        "generator" : "assigned",
-        "fieldName" : "name",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "boolean",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "AVAILABILITY",
-        "generator" : "assigned",
-        "fieldName" : "availability",
-        "type" : "boolean",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "boolean"
-      } ],
-      "primaryKeys" : [ "id" ],
-      "tableType" : "TABLE",
-      "fullyQualifiedName" : "com.eshop.eshopping.Product",
-      "entityName" : "Product"
-    },
-    "matchMode" : "start",
-    "transformationRequired" : false,
-    "maxResults" : 20,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "read",
-    "category" : "wm.LiveVariable",
-    "autoUpdate" : true,
-    "saveInPhonegap" : false,
-    "dataBinding" : [ {
-      "target" : "id",
-      "value" : "bind:Widgets.id.caption",
-      "type" : "number"
-    } ],
-    "_id" : "wm-Product_obj-wm.LiveVariable-1450091071612",
-    "filterFields" : { },
-    "tableName" : "PRODUCT",
-    "designMaxResults" : 10,
-    "name" : "Product_obj",
-    "owner" : "App",
-    "tableType" : "TABLE",
-    "liveSource" : "eshopping"
-  },
-  "Static_Product_data_cam" : {
-    "isList" : false,
-    "category" : "wm.Variable",
-    "$$hashKey" : "object:12363",
-    "dataBinding" : [ {
-      "isList" : false,
-      "target" : "imgUrl",
-      "value" : "bind:Widgets.livelist2.selecteditem.imgUrl",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "id",
-      "value" : "bind:Widgets.livelist2.selecteditem.id",
-      "type" : "java.lang.Integer"
-    }, {
-      "isList" : false,
-      "target" : "category",
-      "value" : "bind:Widgets.livelist2.selecteditem.category",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "price",
-      "value" : "bind:Widgets.livelist2.selecteditem.price",
-      "type" : "java.lang.Double"
-    }, {
-      "isList" : false,
-      "target" : "description",
-      "value" : "bind:Widgets.livelist2.selecteditem.description",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "name",
-      "value" : "bind:Widgets.livelist2.selecteditem.name",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "availability",
-      "value" : "bind:Widgets.livelist2.selecteditem.availability",
-      "type" : "java.lang.Boolean"
-    } ],
-    "saveInPhonegap" : false,
-    "_id" : "wm-Static_Product_data_cam-wm.Variable-1450083692212",
-    "name" : "Static_Product_data_cam",
-    "owner" : "App",
-    "type" : "com.eshop.eshopping.Product",
-    "dataSet" : {
-      "imgUrl" : "",
-      "id" : "",
-      "category" : "",
-      "orderdetails" : [ {
-        "product" : { },
-        "id" : "",
-        "productorder" : {
-          "id" : "",
-          "orderdetails" : [ { } ],
-          "status" : "",
-          "user" : {
-            "phone" : "",
-            "street" : "",
-            "productBought" : "",
-            "password" : "",
-            "itemorders" : [ {
-              "product" : { },
-              "id" : "",
-              "status" : "",
-              "quantity" : "",
-              "user" : { }
-            } ],
-            "country" : "",
-            "city" : "",
-            "id" : "",
-            "landmark" : "",
-            "pin" : "",
-            "email" : "",
-            "productorders" : [ { } ],
-            "name" : "",
-            "role" : ""
-          }
-        },
-        "quantity" : ""
-      } ],
-      "price" : "",
-      "description" : "",
-      "name" : "",
-      "itemorders" : [ { } ],
-      "availability" : ""
-    }
-  },
-  "goToPage_Product_laptops" : {
-    "operation" : "gotoPage",
-    "pageName" : "Product_laptops",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Product_laptops-wm.NavigationVariable-1450083613603",
-    "name" : "goToPage_Product_laptops",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "goToPage_Admin" : {
-    "operation" : "gotoPage",
-    "pageName" : "Admin",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Admin-wm.NavigationVariable-1448961272171",
-    "name" : "goToPage_Admin",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "goToPage_Categories_laptop" : {
-    "operation" : "gotoPage",
-    "pageName" : "Categories_laptop",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Categories_laptop-wm.NavigationVariable-1449139274242",
-    "name" : "goToPage_Categories_laptop",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "Static_Product_data_Laptop" : {
-    "isList" : false,
-    "category" : "wm.Variable",
-    "$$hashKey" : "object:12365",
-    "dataBinding" : [ {
-      "isList" : false,
-      "target" : "imgUrl",
-      "value" : "bind:Widgets.livelist3.selecteditem.imgUrl",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "id",
-      "value" : "bind:Widgets.livelist3.selecteditem.id",
-      "type" : "java.lang.Integer"
-    }, {
-      "isList" : false,
-      "target" : "category",
-      "value" : "bind:Widgets.livelist3.selecteditem.category",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "price",
-      "value" : "bind:Widgets.livelist3.selecteditem.price",
-      "type" : "java.lang.Double"
-    }, {
-      "isList" : false,
-      "target" : "description",
-      "value" : "bind:Widgets.livelist3.selecteditem.description",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "name",
-      "value" : "bind:Widgets.livelist3.selecteditem.name",
-      "type" : "java.lang.String"
-    }, {
-      "isList" : false,
-      "target" : "availability",
-      "value" : "bind:Widgets.livelist3.selecteditem.availability",
-      "type" : "java.lang.Boolean"
-    } ],
-    "saveInPhonegap" : false,
-    "_id" : "wm-Static_Product_data_Laptop-wm.Variable-1450086660204",
-    "name" : "Static_Product_data_Laptop",
-    "owner" : "App",
-    "type" : "com.eshop.eshopping.Product",
-    "dataSet" : {
-      "imgUrl" : "",
-      "id" : "",
-      "category" : "",
-      "orderdetails" : [ {
-        "product" : { },
-        "id" : "",
-        "productorder" : {
-          "id" : "",
-          "orderdetails" : [ { } ],
-          "status" : "",
-          "user" : {
-            "phone" : "",
-            "street" : "",
-            "productBought" : "",
-            "password" : "",
-            "itemorders" : [ {
-              "product" : { },
-              "id" : "",
-              "status" : "",
-              "quantity" : "",
-              "user" : { }
-            } ],
-            "country" : "",
-            "city" : "",
-            "id" : "",
-            "landmark" : "",
-            "pin" : "",
-            "email" : "",
-            "productorders" : [ { } ],
-            "name" : "",
-            "role" : ""
-          }
-        },
-        "quantity" : ""
-      } ],
-      "price" : "",
-      "description" : "",
-      "name" : "",
-      "itemorders" : [ { } ],
-      "availability" : ""
-    }
-  },
-  "EshoppingProductorderData" : {
-    "isList" : true,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12355",
-    "bindCount" : 2,
-    "package" : "com.eshop.eshopping.Productorder",
-    "ignoreCase" : false,
-    "type" : "Productorder",
-    "startUpdate" : true,
-    "propertiesMap" : {
-      "columns" : [ {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : true,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "ID",
-        "generator" : "identity",
-        "fieldName" : "id",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "STATUS",
-        "generator" : "assigned",
-        "fieldName" : "status",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "relatedTableName" : "USER",
-        "isList" : false,
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "columns" : [ {
-          "hibernateType" : "integer",
-          "precision" : 19,
-          "isPrimaryKey" : true,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "ID",
-          "generator" : "identity",
-          "fieldName" : "id",
-          "type" : "integer",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "integer"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "LANDMARK",
-          "generator" : "assigned",
-          "fieldName" : "landmark",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 15,
-          "columnName" : "PHONE",
-          "generator" : "assigned",
-          "fieldName" : "phone",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PIN",
-          "generator" : "assigned",
-          "fieldName" : "pin",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "EMAIL",
-          "generator" : "assigned",
-          "fieldName" : "email",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "STREET",
-          "generator" : "assigned",
-          "fieldName" : "street",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "NAME",
-          "generator" : "assigned",
-          "fieldName" : "name",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PRODUCT_BOUGHT",
-          "generator" : "assigned",
-          "fieldName" : "productBought",
-          "type" : "string",
-          "notNull" : false,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PASSWORD",
-          "generator" : "assigned",
-          "fieldName" : "password",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "COUNTRY",
-          "generator" : "assigned",
-          "fieldName" : "country",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "CITY",
-          "generator" : "assigned",
-          "fieldName" : "city",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "ROLE",
-          "generator" : "assigned",
-          "fieldName" : "role",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        } ],
-        "relatedFieldName" : "user.id",
-        "type" : "integer",
-        "fullyQualifiedType" : "integer",
-        "relatedEntityName" : "User",
-        "isPrimaryKey" : false,
-        "isRelated" : true,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "USER_ID",
-        "defaultValue" : null,
-        "notNull" : true,
-        "fieldName" : "user"
-      } ],
-      "primaryKeys" : [ "id" ],
-      "tableType" : "TABLE",
-      "fullyQualifiedName" : "com.eshop.eshopping.Productorder",
-      "entityName" : "Productorder"
-    },
-    "transformationRequired" : false,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "read",
-    "saveInPhonegap" : false,
-    "_id" : "wm-EshoppingProductorderData-wm.LiveVariable-1448967110394",
-    "isDefault" : true,
-    "tableName" : "PRODUCTORDER",
-    "designMaxResults" : 10,
-    "name" : "EshoppingProductorderData",
-    "relatedTables" : [ {
-      "relationName" : "user",
-      "package" : "com.eshop.eshopping.Productorder",
-      "watchOn" : "EshoppingUserData",
-      "columnName" : "user",
-      "type" : "User"
-    } ],
-    "liveSource" : "eshopping",
-    "dbSystem" : "HSQLDB",
-    "inFlightBehavior" : "executeLast",
-    "properties" : [ "user" ],
-    "matchMode" : "start",
-    "maxResults" : 20,
-    "category" : "wm.LiveVariable",
-    "autoUpdate" : true,
-    "dataBinding" : [ ],
-    "owner" : "App",
-    "tableType" : "TABLE"
-  },
-  "loginVariable" : {
-    "onError" : "Javascript",
-    "$$hashKey" : "object:12359",
-    "inFlightBehavior" : "executeLast",
-    "onSuccess" : "goToPage_Main",
-    "type" : "string",
-    "startUpdate" : false,
-    "transformationRequired" : false,
-    "useDefaultSuccessHandler" : false,
-    "dataSet" : {
-      "username" : "",
-      "password" : ""
-    },
-    "category" : "wm.LoginVariable",
-    "autoUpdate" : true,
-    "saveInPhonegap" : false,
-    "dataBinding" : [ {
-      "target" : "username",
-      "value" : "bind:Widgets.Username.datavalue",
-      "type" : "string"
-    }, {
-      "target" : "password",
-      "value" : "bind:Widgets.passwordtext.datavalue",
-      "type" : "string"
-    } ],
-    "_id" : "wm-loginVariable-wm.LoginVariable-1448969207395",
-    "name" : "loginVariable",
-    "owner" : "App"
-  },
-  "InsertCart" : {
-    "isList" : false,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12357",
-    "package" : "com.eshop.eshopping.Itemorder",
-    "ignoreCase" : false,
-    "type" : "Itemorder",
-    "startUpdate" : false,
-    "propertiesMap" : {
-      "columns" : [ {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : true,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "ID",
-        "generator" : "identity",
-        "fieldName" : "id",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      }, {
-        "relatedTableName" : "PRODUCT",
-        "isList" : false,
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "columns" : [ {
-          "hibernateType" : "integer",
-          "precision" : 19,
-          "isPrimaryKey" : true,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "ID",
-          "generator" : "identity",
-          "fieldName" : "id",
-          "type" : "integer",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "integer"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "IMG_URL",
-          "generator" : "assigned",
-          "fieldName" : "imgUrl",
-          "type" : "string",
-          "notNull" : false,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "CATEGORY",
-          "generator" : "assigned",
-          "fieldName" : "category",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "double",
-          "precision" : 64,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PRICE",
-          "generator" : "assigned",
-          "fieldName" : "price",
-          "type" : "double",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "double"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "DESCRIPTION",
-          "generator" : "assigned",
-          "fieldName" : "description",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "NAME",
-          "generator" : "assigned",
-          "fieldName" : "name",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "boolean",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "AVAILABILITY",
-          "generator" : "assigned",
-          "fieldName" : "availability",
-          "type" : "boolean",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "boolean"
-        } ],
-        "relatedFieldName" : "product.id",
-        "type" : "integer",
-        "fullyQualifiedType" : "integer",
-        "relatedEntityName" : "Product",
-        "isPrimaryKey" : false,
-        "isRelated" : true,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "PRODUCT_ID",
-        "defaultValue" : null,
-        "notNull" : true,
-        "fieldName" : "product"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "STATUS",
-        "generator" : "assigned",
-        "fieldName" : "status",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "relatedTableName" : "USER",
-        "isList" : false,
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "columns" : [ {
-          "hibernateType" : "integer",
-          "precision" : 19,
-          "isPrimaryKey" : true,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "ID",
-          "generator" : "identity",
-          "fieldName" : "id",
-          "type" : "integer",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "integer"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "LANDMARK",
-          "generator" : "assigned",
-          "fieldName" : "landmark",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 15,
-          "columnName" : "PHONE",
-          "generator" : "assigned",
-          "fieldName" : "phone",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PIN",
-          "generator" : "assigned",
-          "fieldName" : "pin",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "EMAIL",
-          "generator" : "assigned",
-          "fieldName" : "email",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "STREET",
-          "generator" : "assigned",
-          "fieldName" : "street",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "NAME",
-          "generator" : "assigned",
-          "fieldName" : "name",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PRODUCT_BOUGHT",
-          "generator" : "assigned",
-          "fieldName" : "productBought",
-          "type" : "string",
-          "notNull" : false,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PASSWORD",
-          "generator" : "assigned",
-          "fieldName" : "password",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "COUNTRY",
-          "generator" : "assigned",
-          "fieldName" : "country",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "CITY",
-          "generator" : "assigned",
-          "fieldName" : "city",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "ROLE",
-          "generator" : "assigned",
-          "fieldName" : "role",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        } ],
-        "relatedFieldName" : "user.id",
-        "type" : "integer",
-        "fullyQualifiedType" : "integer",
-        "relatedEntityName" : "User",
-        "isPrimaryKey" : false,
-        "isRelated" : true,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "USER_ID",
-        "defaultValue" : null,
-        "notNull" : true,
-        "fieldName" : "user"
-      }, {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "QUANTITY",
-        "generator" : "assigned",
-        "fieldName" : "quantity",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      } ],
-      "primaryKeys" : [ "id" ],
-      "tableType" : "TABLE",
-      "fullyQualifiedName" : "com.eshop.eshopping.Itemorder",
-      "entityName" : "Itemorder"
-    },
-    "transformationRequired" : false,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "insert",
-    "saveInPhonegap" : false,
-    "_id" : "wm-InsertCart-wm.LiveVariable-1450090933838",
-    "tableName" : "ITEMORDER",
-    "designMaxResults" : 10,
-    "name" : "InsertCart",
-    "relatedTables" : [ {
-      "relationName" : "product",
-      "package" : "com.eshop.eshopping.Itemorder",
-      "watchOn" : "EshoppingProductData",
-      "columnName" : "product",
-      "type" : "Product"
-    }, {
-      "relationName" : "user",
-      "package" : "com.eshop.eshopping.Itemorder",
-      "watchOn" : "EshoppingUserData",
-      "columnName" : "user",
-      "type" : "User"
-    } ],
-    "liveSource" : "eshopping",
-    "inFlightBehavior" : "executeAll",
-    "onSuccess" : "goToPage_Cart;EshoppingExecute_Total_InCart;EshoppingExecute_Total_Price",
-    "properties" : [ "product", "user" ],
-    "inputFields" : { },
-    "maxResults" : 20,
-    "matchMode" : "start",
-    "category" : "wm.LiveVariable",
-    "autoUpdate" : false,
-    "dataBinding" : [ {
-      "target" : "product",
-      "value" : "bind:Variables.Product_obj.dataSet.data[0]",
-      "type" : "number"
-    }, {
-      "target" : "status",
-      "value" : "In Cart",
-      "type" : "string"
-    }, {
-      "target" : "user",
-      "value" : "bind:Variables.user_obj.dataSet.data[0]",
-      "type" : "number"
-    }, {
-      "target" : "quantity",
-      "value" : "bind:1",
-      "type" : "number"
-    } ],
-    "filterFields" : { },
-    "owner" : "App",
-    "tableType" : "TABLE"
-  },
-  "user_obj" : {
-    "isList" : false,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12367",
-    "inFlightBehavior" : "executeAll",
-    "package" : "com.eshop.eshopping.User",
-    "ignoreCase" : false,
-    "type" : "User",
-    "startUpdate" : true,
-    "propertiesMap" : {
-      "columns" : [ {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : true,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "ID",
-        "generator" : "identity",
-        "fieldName" : "id",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "LANDMARK",
-        "generator" : "assigned",
-        "fieldName" : "landmark",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 15,
-        "columnName" : "PHONE",
-        "generator" : "assigned",
-        "fieldName" : "phone",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "PIN",
-        "generator" : "assigned",
-        "fieldName" : "pin",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "EMAIL",
-        "generator" : "assigned",
-        "fieldName" : "email",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "STREET",
-        "generator" : "assigned",
-        "fieldName" : "street",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "NAME",
-        "generator" : "assigned",
-        "fieldName" : "name",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "PRODUCT_BOUGHT",
-        "generator" : "assigned",
-        "fieldName" : "productBought",
-        "type" : "string",
-        "notNull" : false,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "PASSWORD",
-        "generator" : "assigned",
-        "fieldName" : "password",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "COUNTRY",
-        "generator" : "assigned",
-        "fieldName" : "country",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "CITY",
-        "generator" : "assigned",
-        "fieldName" : "city",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "ROLE",
-        "generator" : "assigned",
-        "fieldName" : "role",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      } ],
-      "primaryKeys" : [ "id" ],
-      "tableType" : "TABLE",
-      "fullyQualifiedName" : "com.eshop.eshopping.User",
-      "entityName" : "User"
-    },
-    "matchMode" : "start",
-    "transformationRequired" : false,
-    "maxResults" : 1,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "read",
-    "category" : "wm.LiveVariable",
-    "autoUpdate" : true,
-    "saveInPhonegap" : false,
-    "dataBinding" : [ {
-      "target" : "id",
-      "value" : "bind:Variables.loggedInUser.dataSet.id",
-      "type" : "number"
-    } ],
-    "_id" : "wm-user_obj-wm.LiveVariable-1450092190771",
-    "filterFields" : { },
-    "tableName" : "USER",
-    "designMaxResults" : 1,
-    "name" : "user_obj",
-    "owner" : "App",
-    "tableType" : "TABLE",
-    "liveSource" : "eshopping"
-  },
-  "EshoppingExecute_Total_Price" : {
-    "isList" : false,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12349",
-    "inFlightBehavior" : "executeAll",
-    "wmServiceOperationInfo" : {
-      "httpMethod" : "get",
-      "relativePath" : "/eshopping/queryExecutor/queries/_Total_Price",
-      "name" : "execute_Total_Price",
-      "parameters" : [ {
-        "name" : "data",
-        "parameterType" : "query",
-        "type" : "string"
-      }, {
-        "name" : "page",
-        "parameterType" : "query",
-        "type" : "integer"
-      }, {
-        "name" : "size",
-        "parameterType" : "query",
-        "type" : "integer"
-      }, {
-        "name" : "sort",
-        "parameterType" : "query",
-        "type" : "string"
-      } ]
-    },
-    "serviceType" : "DataService",
-    "startUpdate" : true,
-    "type" : "eshopping_Total_PricertnType",
-    "transformationRequired" : false,
-    "maxResults" : 20,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "execute_Total_Price",
-    "category" : "wm.ServiceVariable",
-    "autoUpdate" : true,
-    "saveInPhonegap" : false,
-    "dataBinding" : [ {
-      "target" : "data",
-      "value" : "In Cart",
-      "type" : "string"
-    } ],
-    "_id" : "wm-EshoppingExecute_Total_Price-wm.ServiceVariable-1450089838621",
-    "operationType" : "get",
-    "isDefault" : true,
-    "designMaxResults" : 10,
-    "name" : "EshoppingExecute_Total_Price",
-    "service" : "eshopping",
-    "owner" : "App"
-  },
-  "EshoppingUserData" : {
-    "firstRow" : 0,
-    "isList" : true,
-    "$$hashKey" : "object:12356",
-    "bindCount" : 1,
-    "package" : "com.eshop.eshopping.User",
-    "startUpdate" : true,
-    "type" : "User",
-    "ignoreCase" : false,
-    "propertiesMap" : {
-      "columns" : [ {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : true,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "ID",
-        "generator" : "identity",
-        "fieldName" : "id",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "LANDMARK",
-        "generator" : "assigned",
-        "fieldName" : "landmark",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 15,
-        "columnName" : "PHONE",
-        "generator" : "assigned",
-        "fieldName" : "phone",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "PIN",
-        "generator" : "assigned",
-        "fieldName" : "pin",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "EMAIL",
-        "generator" : "assigned",
-        "fieldName" : "email",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "STREET",
-        "generator" : "assigned",
-        "fieldName" : "street",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "NAME",
-        "generator" : "assigned",
-        "fieldName" : "name",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "PRODUCT_BOUGHT",
-        "generator" : "assigned",
-        "fieldName" : "productBought",
-        "type" : "string",
-        "notNull" : false,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "PASSWORD",
-        "generator" : "assigned",
-        "fieldName" : "password",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "COUNTRY",
-        "generator" : "assigned",
-        "fieldName" : "country",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "CITY",
-        "generator" : "assigned",
-        "fieldName" : "city",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "ROLE",
-        "generator" : "assigned",
-        "fieldName" : "role",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      } ],
-      "primaryKeys" : [ "id" ],
-      "tableType" : "TABLE",
-      "fullyQualifiedName" : "com.eshop.eshopping.User",
-      "entityName" : "User"
-    },
-    "transformationRequired" : false,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "read",
-    "_id" : "wm-EshoppingUserData-wm.LiveVariable-1448967110394",
-    "saveInPhonegap" : false,
-    "isDefault" : true,
-    "tableName" : "USER",
-    "name" : "EshoppingUserData",
-    "designMaxResults" : 10,
-    "liveSource" : "eshopping",
-    "dbSystem" : "HSQLDB",
-    "inFlightBehavior" : "executeLast",
-    "matchMode" : "start",
-    "maxResults" : 20,
-    "category" : "wm.LiveVariable",
-    "autoUpdate" : true,
-    "dataBinding" : [ ],
-    "owner" : "App",
-    "tableType" : "TABLE"
-  },
-  "goToPage_Profile" : {
-    "operation" : "gotoPage",
-    "pageName" : "Profile",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Profile-wm.NavigationVariable-1448960453930",
-    "name" : "goToPage_Profile",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "goToPage_Product_cameras" : {
-    "operation" : "gotoPage",
-    "pageName" : "Product_cameras",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Product_cameras-wm.NavigationVariable-1450083631362",
-    "name" : "goToPage_Product_cameras",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "EshoppingExecute_Total_InCart" : {
-    "isList" : false,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12348",
-    "inFlightBehavior" : "executeLast",
-    "wmServiceOperationInfo" : {
-      "httpMethod" : "get",
-      "relativePath" : "/eshopping/queryExecutor/queries/_Total_InCart",
-      "name" : "execute_Total_InCart",
-      "parameters" : [ {
-        "name" : "page",
-        "parameterType" : "query",
-        "type" : "integer"
-      }, {
-        "name" : "size",
-        "parameterType" : "query",
-        "type" : "integer"
-      }, {
-        "name" : "sort",
-        "parameterType" : "query",
-        "type" : "string"
-      } ]
-    },
-    "serviceType" : "DataService",
-    "startUpdate" : false,
-    "type" : "eshopping_Total_InCartrtnType",
-    "transformationRequired" : false,
-    "maxResults" : 20,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "execute_Total_InCart",
-    "category" : "wm.ServiceVariable",
-    "autoUpdate" : true,
-    "saveInPhonegap" : false,
-    "dataBinding" : [ ],
-    "_id" : "wm-EshoppingExecute_Total_InCart-wm.ServiceVariable-1450172698588",
-    "isDefault" : true,
-    "designMaxResults" : 10,
-    "name" : "EshoppingExecute_Total_InCart",
-    "service" : "eshopping",
-    "owner" : "App"
-  },
-  "goToPage_Products" : {
-    "operation" : "gotoPage",
-    "pageName" : "Products",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Products-wm.NavigationVariable-1450077286063",
-    "name" : "goToPage_Products",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "EshoppingExecuteOrdered" : {
-    "isList" : false,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12351",
-    "inFlightBehavior" : "executeLast",
-    "onSuccess" : "goToPage_Orders",
-    "wmServiceOperationInfo" : {
-      "httpMethod" : "put",
-      "relativePath" : "/eshopping/queryExecutor/queries/Ordered",
-      "name" : "executeOrdered",
-      "parameters" : [ {
-        "name" : "data",
-        "parameterType" : "query",
-        "type" : "string"
-      }, {
-        "name" : "data2",
-        "parameterType" : "query",
-        "type" : "string"
-      } ],
-      "consumes" : [ "application/x-www-form-urlencoded" ]
-    },
-    "serviceType" : "DataService",
-    "startUpdate" : false,
-    "type" : "eshoppingOrderedrtnType",
-    "transformationRequired" : false,
-    "maxResults" : 20,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "executeOrdered",
-    "category" : "wm.ServiceVariable",
-    "autoUpdate" : false,
-    "saveInPhonegap" : false,
-    "dataBinding" : [ {
-      "target" : "data",
-      "value" : "Ordered",
-      "type" : "string"
-    }, {
-      "target" : "data2",
-      "value" : "In Cart",
-      "type" : "string"
-    } ],
-    "_id" : "wm-EshoppingExecuteOrdered-wm.ServiceVariable-1450089641366",
-    "operationType" : "put",
-    "isDefault" : true,
-    "designMaxResults" : 10,
-    "name" : "EshoppingExecuteOrdered",
-    "service" : "eshopping",
-    "owner" : "App"
-  },
-  "loggedInUser" : {
-    "isList" : false,
-    "category" : "wm.Variable",
-    "$$hashKey" : "object:12358",
-    "dataBinding" : [ ],
-    "saveInPhonegap" : false,
-    "_id" : "wm-loggedInUser-wm.Variable-1448969207397",
-    "name" : "loggedInUser",
-    "owner" : "App",
-    "type" : "string",
-    "dataSet" : {
-      "id" : "",
-      "tenantId" : "",
-      "isAuthenticated" : false,
-      "isSecurityEnabled" : true,
-      "name" : "",
-      "roles" : [ ]
-    }
-  },
-  "goToPage_Categories" : {
-    "operation" : "gotoPage",
-    "pageName" : "Categories",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Categories-wm.NavigationVariable-1448960688452",
-    "name" : "goToPage_Categories",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "EshoppingExecute_OrderedLists" : {
-    "isList" : false,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12347",
-    "inFlightBehavior" : "executeLast",
-    "wmServiceOperationInfo" : {
-      "httpMethod" : "get",
-      "relativePath" : "/eshopping/queryExecutor/queries/_OrderedLists",
-      "name" : "execute_OrderedLists",
-      "parameters" : [ {
-        "name" : "page",
-        "parameterType" : "query",
-        "type" : "integer"
-      }, {
-        "name" : "size",
-        "parameterType" : "query",
-        "type" : "integer"
-      }, {
-        "name" : "sort",
-        "parameterType" : "query",
-        "type" : "string"
-      } ]
-    },
-    "serviceType" : "DataService",
-    "startUpdate" : true,
-    "type" : "eshopping_OrderedListsrtnType",
-    "transformationRequired" : false,
-    "maxResults" : 20,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "execute_OrderedLists",
-    "category" : "wm.ServiceVariable",
-    "autoUpdate" : true,
-    "saveInPhonegap" : false,
-    "dataBinding" : [ ],
-    "_id" : "wm-EshoppingExecute_OrderedLists-wm.ServiceVariable-1450089691826",
-    "operationType" : "get",
-    "isDefault" : true,
-    "designMaxResults" : 10,
-    "name" : "EshoppingExecute_OrderedLists",
-    "service" : "eshopping",
-    "owner" : "App"
-  },
-  "EshoppingItemorderData" : {
-    "isList" : true,
-    "firstRow" : 0,
-    "$$hashKey" : "object:12352",
-    "bindCount" : 1,
-    "package" : "com.eshop.eshopping.Itemorder",
-    "ignoreCase" : false,
-    "type" : "Itemorder",
-    "startUpdate" : true,
-    "propertiesMap" : {
-      "columns" : [ {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : true,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "ID",
-        "generator" : "identity",
-        "fieldName" : "id",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      }, {
-        "relatedTableName" : "PRODUCT",
-        "isList" : false,
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "columns" : [ {
-          "hibernateType" : "integer",
-          "precision" : 19,
-          "isPrimaryKey" : true,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "ID",
-          "generator" : "identity",
-          "fieldName" : "id",
-          "type" : "integer",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "integer"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "IMG_URL",
-          "generator" : "assigned",
-          "fieldName" : "imgUrl",
-          "type" : "string",
-          "notNull" : false,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "CATEGORY",
-          "generator" : "assigned",
-          "fieldName" : "category",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "double",
-          "precision" : 64,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PRICE",
-          "generator" : "assigned",
-          "fieldName" : "price",
-          "type" : "double",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "double"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "DESCRIPTION",
-          "generator" : "assigned",
-          "fieldName" : "description",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "NAME",
-          "generator" : "assigned",
-          "fieldName" : "name",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "boolean",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "AVAILABILITY",
-          "generator" : "assigned",
-          "fieldName" : "availability",
-          "type" : "boolean",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "boolean"
-        } ],
-        "relatedFieldName" : "product.id",
-        "type" : "integer",
-        "fullyQualifiedType" : "integer",
-        "relatedEntityName" : "Product",
-        "isPrimaryKey" : false,
-        "isRelated" : true,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "PRODUCT_ID",
-        "defaultValue" : null,
-        "notNull" : true,
-        "fieldName" : "product"
-      }, {
-        "hibernateType" : "string",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "STATUS",
-        "generator" : "assigned",
-        "fieldName" : "status",
-        "type" : "string",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "string"
-      }, {
-        "relatedTableName" : "USER",
-        "isList" : false,
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "columns" : [ {
-          "hibernateType" : "integer",
-          "precision" : 19,
-          "isPrimaryKey" : true,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "ID",
-          "generator" : "identity",
-          "fieldName" : "id",
-          "type" : "integer",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "integer"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "LANDMARK",
-          "generator" : "assigned",
-          "fieldName" : "landmark",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 15,
-          "columnName" : "PHONE",
-          "generator" : "assigned",
-          "fieldName" : "phone",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PIN",
-          "generator" : "assigned",
-          "fieldName" : "pin",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "EMAIL",
-          "generator" : "assigned",
-          "fieldName" : "email",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "STREET",
-          "generator" : "assigned",
-          "fieldName" : "street",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "NAME",
-          "generator" : "assigned",
-          "fieldName" : "name",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PRODUCT_BOUGHT",
-          "generator" : "assigned",
-          "fieldName" : "productBought",
-          "type" : "string",
-          "notNull" : false,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "PASSWORD",
-          "generator" : "assigned",
-          "fieldName" : "password",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "COUNTRY",
-          "generator" : "assigned",
-          "fieldName" : "country",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "CITY",
-          "generator" : "assigned",
-          "fieldName" : "city",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        }, {
-          "hibernateType" : "string",
-          "precision" : 19,
-          "isPrimaryKey" : false,
-          "isRelated" : false,
-          "length" : 255,
-          "columnName" : "ROLE",
-          "generator" : "assigned",
-          "fieldName" : "role",
-          "type" : "string",
-          "notNull" : true,
-          "defaultValue" : null,
-          "fullyQualifiedType" : "string"
-        } ],
-        "relatedFieldName" : "user.id",
-        "type" : "integer",
-        "fullyQualifiedType" : "integer",
-        "relatedEntityName" : "User",
-        "isPrimaryKey" : false,
-        "isRelated" : true,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "USER_ID",
-        "defaultValue" : null,
-        "notNull" : true,
-        "fieldName" : "user"
-      }, {
-        "hibernateType" : "integer",
-        "precision" : 19,
-        "isPrimaryKey" : false,
-        "isRelated" : false,
-        "length" : 255,
-        "columnName" : "QUANTITY",
-        "generator" : "assigned",
-        "fieldName" : "quantity",
-        "type" : "integer",
-        "notNull" : true,
-        "defaultValue" : null,
-        "fullyQualifiedType" : "integer"
-      } ],
-      "primaryKeys" : [ "id" ],
-      "tableType" : "TABLE",
-      "fullyQualifiedName" : "com.eshop.eshopping.Itemorder",
-      "entityName" : "Itemorder"
-    },
-    "transformationRequired" : false,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "read",
-    "saveInPhonegap" : false,
-    "_id" : "wm-EshoppingItemorderData-wm.LiveVariable-1448967110383",
-    "isDefault" : true,
-    "tableName" : "ITEMORDER",
-    "designMaxResults" : 10,
-    "name" : "EshoppingItemorderData",
-    "relatedTables" : [ {
-      "relationName" : "product",
-      "package" : "com.eshop.eshopping.Itemorder",
-      "watchOn" : "EshoppingProductData",
-      "columnName" : "product",
-      "type" : "Product"
-    }, {
-      "relationName" : "user",
-      "package" : "com.eshop.eshopping.Itemorder",
-      "watchOn" : "EshoppingUserData",
-      "columnName" : "user",
-      "type" : "User"
-    } ],
-    "liveSource" : "eshopping",
-    "dbSystem" : "HSQLDB",
-    "inFlightBehavior" : "executeLast",
-    "properties" : [ "product", "user" ],
-    "matchMode" : "start",
-    "maxResults" : 20,
-    "category" : "wm.LiveVariable",
-    "autoUpdate" : true,
-    "dataBinding" : [ ],
-    "filterFields" : { },
-    "owner" : "App",
-    "tableType" : "TABLE"
-  },
-  "goToPage_Categories_accsries" : {
-    "operation" : "gotoPage",
-    "pageName" : "Categories_accsries",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Categories_accsries-wm.NavigationVariable-1449121157907",
-    "name" : "goToPage_Categories_accsries",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "supportedLocale" : {
-    "isList" : false,
-    "category" : "wm.Variable",
-    "$$hashKey" : "object:12366",
-    "dataBinding" : [ ],
-    "saveInPhonegap" : false,
-    "_id" : "wm-supportedLocale-wm.Variable1402640443182",
-    "name" : "supportedLocale",
-    "owner" : "App",
-    "type" : "string",
-    "dataSet" : {
-      "en" : "English"
-    }
-  },
-  "goToPage_Categories_periphrls" : {
-    "operation" : "gotoPage",
-    "pageName" : "Categories_periphrls",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Categories_periphrls-wm.NavigationVariable-1449121237159",
-    "name" : "goToPage_Categories_periphrls",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  },
-  "goToPage_Categories_Cameras" : {
-    "operation" : "gotoPage",
-    "pageName" : "Categories_Cameras",
-    "category" : "wm.NavigationVariable",
-    "dataBinding" : { },
-    "_id" : "wm-goToPage_Categories_Cameras-wm.NavigationVariable-1449147766571",
-    "name" : "goToPage_Categories_Cameras",
-    "owner" : "App",
-    "pageTransitions" : "none"
-  }
+	"static_product_data_forsearch": {
+		"name": "static_product_data_forsearch",
+		"type": "Product",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"target": "name",
+				"value": "bind:Widgets.header1.Widgets.productSearch.query",
+				"type": "string"
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"operation": "read",
+		"startUpdate": true,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"bindCount": -2,
+		"package": "com.eshop.eshopping.Product",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "imgUrl",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "IMG_URL",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "category",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "CATEGORY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "price",
+					"type": "double",
+					"hibernateType": "double",
+					"fullyQualifiedType": "double",
+					"columnName": "PRICE",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "description",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "DESCRIPTION",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "name",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "NAME",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "availability",
+					"type": "boolean",
+					"hibernateType": "boolean",
+					"fullyQualifiedType": "boolean",
+					"columnName": "AVAILABILITY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
+				"id"
+			],
+			"entityName": "Product",
+			"fullyQualifiedName": "com.eshop.eshopping.Product",
+			"tableType": "TABLE"
+		},
+		"category": "wm.LiveVariable",
+		"_id": "wm-static_product_data_forsearch-Product-wm.LiveVariable-1449752030516",
+		"filterFields": {},
+		"tableName": "PRODUCT",
+		"tableType": "TABLE",
+		"$$hashKey": "object:1558"
+	},
+	"Static_Product_data": {
+		"name": "Static_Product_data",
+		"type": "com.eshop.eshopping.Product",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"imgUrl": "",
+			"id": "",
+			"category": "",
+			"orderdetails": [
+				{
+					"product": {},
+					"id": "",
+					"productorder": {
+						"id": "",
+						"orderdetails": [
+							{}
+						],
+						"status": "",
+						"user": {
+							"phone": "",
+							"street": "",
+							"productBought": "",
+							"password": "",
+							"itemorders": [
+								{
+									"product": {},
+									"id": "",
+									"status": "",
+									"quantity": "",
+									"user": {}
+								}
+							],
+							"country": "",
+							"city": "",
+							"id": "",
+							"landmark": "",
+							"pin": "",
+							"email": "",
+							"productorders": [
+								{}
+							],
+							"name": "",
+							"role": ""
+						}
+					},
+					"quantity": ""
+				}
+			],
+			"price": "",
+			"description": "",
+			"name": "",
+			"itemorders": [
+				{}
+			],
+			"availability": ""
+		},
+		"dataBinding": [
+			{
+				"isList": false,
+				"target": "imgUrl",
+				"value": "bind:Widgets.livelist1.selecteditem.imgUrl",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "id",
+				"value": "bind:Widgets.livelist1.selecteditem.id",
+				"type": "java.lang.Integer"
+			},
+			{
+				"isList": false,
+				"target": "category",
+				"value": "bind:Widgets.livelist1.selecteditem.category",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "price",
+				"value": "bind:Widgets.livelist1.selecteditem.price",
+				"type": "java.lang.Double"
+			},
+			{
+				"isList": false,
+				"target": "description",
+				"value": "bind:Widgets.livelist1.selecteditem.description",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "name",
+				"value": "bind:Widgets.livelist1.selecteditem.name",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "availability",
+				"value": "bind:Widgets.livelist1.selecteditem.availability",
+				"type": "java.lang.Boolean"
+			}
+		],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-Static_Product_data-wm.Variable-1450076864751",
+		"$$hashKey": "object:1556"
+	},
+	"logoutVariable": {
+		"name": "logoutVariable",
+		"type": "string",
+		"owner": "App",
+		"saveInPhonegap": false,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"onSuccess": "goToPage_Main",
+		"redirectTo": "index.html",
+		"useDefaultSuccessHandler": true,
+		"category": "wm.LogoutVariable",
+		"_id": "wm-logoutVariable-wm.LogoutVariable-1448969207396",
+		"$$hashKey": "object:1554"
+	},
+	"EshoppingExecuteCancelled": {
+		"name": "EshoppingExecuteCancelled",
+		"type": "eshoppingcancelledrtnType",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"target": "data",
+				"value": "Cancelled",
+				"type": "string"
+			},
+			{
+				"target": "data1",
+				"value": "bind:Widgets.livelist2.selecteditem.ID",
+				"type": "integer"
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"service": "eshopping",
+		"operation": "executeCancelled",
+		"operationType": "put",
+		"startUpdate": false,
+		"autoUpdate": false,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"onSuccess": "EshoppingExecute_OrderedLists",
+		"wmServiceOperationInfo": {
+			"httpMethod": "put",
+			"name": "executeCancelled",
+			"relativePath": "/eshopping/queryExecutor/queries/cancelled",
+			"consumes": [
+				"application/x-www-form-urlencoded"
+			],
+			"parameters": [
+				{
+					"name": "data",
+					"parameterType": "query",
+					"type": "string"
+				},
+				{
+					"name": "data1",
+					"parameterType": "query",
+					"type": "integer"
+				}
+			]
+		},
+		"serviceType": "DataService",
+		"category": "wm.ServiceVariable",
+		"_id": "wm-EshoppingExecuteCancelled-wm.ServiceVariable-1450089884879",
+		"isDefault": true,
+		"$$hashKey": "object:1543"
+	},
+	"goToPage_Product_search": {
+		"name": "goToPage_Product_search",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Product_search",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Product_search-wm.NavigationVariable-1449751821176"
+	},
+	"hashredirect": {
+		"name": "hashredirect",
+		"type": "string",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-hashredirect-wm.Variable-1450268290392",
+		"$$hashKey": "object:1550"
+	},
+	"goToPage_Orders": {
+		"name": "goToPage_Orders",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Orders",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Orders-wm.NavigationVariable-1448960423563"
+	},
+	"EshoppingOrderdetailData": {
+		"name": "EshoppingOrderdetailData",
+		"type": "Orderdetail",
+		"isList": true,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"operation": "read",
+		"startUpdate": true,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"bindCount": 2,
+		"package": "com.eshop.eshopping.Orderdetail",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "product",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "PRODUCT_ID",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": true,
+					"defaultValue": null,
+					"relatedTableName": "PRODUCT",
+					"relatedEntityName": "Product",
+					"columns": [
+						{
+							"fieldName": "id",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "ID",
+							"isPrimaryKey": true,
+							"notNull": true,
+							"length": 255,
+							"generator": "identity",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "imgUrl",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "IMG_URL",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "category",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "CATEGORY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "price",
+							"type": "double",
+							"hibernateType": "double",
+							"fullyQualifiedType": "double",
+							"columnName": "PRICE",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "description",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "DESCRIPTION",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "name",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "NAME",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "availability",
+							"type": "boolean",
+							"hibernateType": "boolean",
+							"fullyQualifiedType": "boolean",
+							"columnName": "AVAILABILITY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						}
+					],
+					"relatedFieldName": "product.id",
+					"isList": false
+				},
+				{
+					"fieldName": "productorder",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ORDER_ID",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": true,
+					"defaultValue": null,
+					"relatedTableName": "PRODUCTORDER",
+					"relatedEntityName": "Productorder",
+					"columns": [
+						{
+							"fieldName": "user",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "USER_ID",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": true,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "id",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "ID",
+							"isPrimaryKey": true,
+							"notNull": true,
+							"length": 255,
+							"generator": "identity",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "status",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "STATUS",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						}
+					],
+					"relatedFieldName": "productorder.id",
+					"isList": false
+				},
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "quantity",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "QUANTITY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
+				"id"
+			],
+			"entityName": "Orderdetail",
+			"fullyQualifiedName": "com.eshop.eshopping.Orderdetail",
+			"tableType": "TABLE"
+		},
+		"_id": "wm-EshoppingOrderdetailData-wm.LiveVariable-1448967110392",
+		"isDefault": true,
+		"tableName": "ORDERDETAIL",
+		"relatedTables": [
+			{
+				"relationName": "product",
+				"package": "com.eshop.eshopping.Orderdetail",
+				"watchOn": "EshoppingProductData",
+				"columnName": "product",
+				"type": "Product"
+			},
+			{
+				"relationName": "productorder",
+				"package": "com.eshop.eshopping.Orderdetail",
+				"watchOn": "EshoppingProductorderData",
+				"columnName": "productorder",
+				"type": "Productorder"
+			}
+		],
+		"dbSystem": "HSQLDB",
+		"properties": [
+			"product",
+			"productorder"
+		],
+		"category": "wm.LiveVariable",
+		"tableType": "TABLE",
+		"$$hashKey": "object:1546"
+	},
+	"goToPage_Cart": {
+		"name": "goToPage_Cart",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Cart",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Cart-wm.NavigationVariable-1448960328426"
+	},
+	"EshoppingProductData": {
+		"name": "EshoppingProductData",
+		"type": "Product",
+		"isList": true,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 1000,
+		"designMaxResults": 1000,
+		"operation": "read",
+		"startUpdate": true,
+		"autoUpdate": false,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"bindCount": 1,
+		"package": "com.eshop.eshopping.Product",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "imgUrl",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "IMG_URL",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "category",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "CATEGORY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "price",
+					"type": "double",
+					"hibernateType": "double",
+					"fullyQualifiedType": "double",
+					"columnName": "PRICE",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "description",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "DESCRIPTION",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "name",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "NAME",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "availability",
+					"type": "boolean",
+					"hibernateType": "boolean",
+					"fullyQualifiedType": "boolean",
+					"columnName": "AVAILABILITY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
+				"id"
+			],
+			"entityName": "Product",
+			"fullyQualifiedName": "com.eshop.eshopping.Product",
+			"tableType": "TABLE"
+		},
+		"_id": "wm-EshoppingProductData-wm.LiveVariable-1448967110393",
+		"isDefault": true,
+		"tableName": "PRODUCT",
+		"dbSystem": "HSQLDB",
+		"category": "wm.LiveVariable",
+		"filterFields": {},
+		"tableType": "TABLE",
+		"$$hashKey": "object:1547"
+	},
+	"goToPage_Main": {
+		"name": "goToPage_Main",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Main",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Main-wm.NavigationVariable1389180517517"
+	},
+	"Product_obj": {
+		"name": "Product_obj",
+		"type": "Product",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"target": "id",
+				"value": "bind:Widgets.id.caption",
+				"type": "number"
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"operation": "read",
+		"startUpdate": true,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"package": "com.eshop.eshopping.Product",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "imgUrl",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "IMG_URL",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "category",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "CATEGORY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "price",
+					"type": "double",
+					"hibernateType": "double",
+					"fullyQualifiedType": "double",
+					"columnName": "PRICE",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "description",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "DESCRIPTION",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "name",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "NAME",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "availability",
+					"type": "boolean",
+					"hibernateType": "boolean",
+					"fullyQualifiedType": "boolean",
+					"columnName": "AVAILABILITY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
+				"id"
+			],
+			"entityName": "Product",
+			"fullyQualifiedName": "com.eshop.eshopping.Product",
+			"tableType": "TABLE"
+		},
+		"category": "wm.LiveVariable",
+		"_id": "wm-Product_obj-wm.LiveVariable-1450091071612",
+		"filterFields": {},
+		"tableName": "PRODUCT",
+		"tableType": "TABLE",
+		"$$hashKey": "object:1555"
+	},
+	"Static_Product_data_cam": {
+		"name": "Static_Product_data_cam",
+		"type": "com.eshop.eshopping.Product",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"imgUrl": "",
+			"id": "",
+			"category": "",
+			"orderdetails": [
+				{
+					"product": {},
+					"id": "",
+					"productorder": {
+						"id": "",
+						"orderdetails": [
+							{}
+						],
+						"status": "",
+						"user": {
+							"phone": "",
+							"street": "",
+							"productBought": "",
+							"password": "",
+							"itemorders": [
+								{
+									"product": {},
+									"id": "",
+									"status": "",
+									"quantity": "",
+									"user": {}
+								}
+							],
+							"country": "",
+							"city": "",
+							"id": "",
+							"landmark": "",
+							"pin": "",
+							"email": "",
+							"productorders": [
+								{}
+							],
+							"name": "",
+							"role": ""
+						}
+					},
+					"quantity": ""
+				}
+			],
+			"price": "",
+			"description": "",
+			"name": "",
+			"itemorders": [
+				{}
+			],
+			"availability": ""
+		},
+		"dataBinding": [
+			{
+				"isList": false,
+				"target": "imgUrl",
+				"value": "bind:Widgets.livelist2.selecteditem.imgUrl",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "id",
+				"value": "bind:Widgets.livelist2.selecteditem.id",
+				"type": "java.lang.Integer"
+			},
+			{
+				"isList": false,
+				"target": "category",
+				"value": "bind:Widgets.livelist2.selecteditem.category",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "price",
+				"value": "bind:Widgets.livelist2.selecteditem.price",
+				"type": "java.lang.Double"
+			},
+			{
+				"isList": false,
+				"target": "description",
+				"value": "bind:Widgets.livelist2.selecteditem.description",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "name",
+				"value": "bind:Widgets.livelist2.selecteditem.name",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "availability",
+				"value": "bind:Widgets.livelist2.selecteditem.availability",
+				"type": "java.lang.Boolean"
+			}
+		],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-Static_Product_data_cam-wm.Variable-1450083692212",
+		"$$hashKey": "object:1557"
+	},
+	"goToPage_Product_laptops": {
+		"name": "goToPage_Product_laptops",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Product_laptops",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Product_laptops-wm.NavigationVariable-1450083613603"
+	},
+	"goToPage_Admin": {
+		"name": "goToPage_Admin",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Admin",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Admin-wm.NavigationVariable-1448961272171"
+	},
+	"goToPage_Categories_laptop": {
+		"name": "goToPage_Categories_laptop",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Categories_laptop",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Categories_laptop-wm.NavigationVariable-1449139274242"
+	},
+	"Static_Product_data_Laptop": {
+		"name": "Static_Product_data_Laptop",
+		"type": "com.eshop.eshopping.Product",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"imgUrl": "",
+			"id": "",
+			"category": "",
+			"orderdetails": [
+				{
+					"product": {},
+					"id": "",
+					"productorder": {
+						"id": "",
+						"orderdetails": [
+							{}
+						],
+						"status": "",
+						"user": {
+							"phone": "",
+							"street": "",
+							"productBought": "",
+							"password": "",
+							"itemorders": [
+								{
+									"product": {},
+									"id": "",
+									"status": "",
+									"quantity": "",
+									"user": {}
+								}
+							],
+							"country": "",
+							"city": "",
+							"id": "",
+							"landmark": "",
+							"pin": "",
+							"email": "",
+							"productorders": [
+								{}
+							],
+							"name": "",
+							"role": ""
+						}
+					},
+					"quantity": ""
+				}
+			],
+			"price": "",
+			"description": "",
+			"name": "",
+			"itemorders": [
+				{}
+			],
+			"availability": ""
+		},
+		"dataBinding": [
+			{
+				"isList": false,
+				"target": "imgUrl",
+				"value": "bind:Widgets.livelist3.selecteditem.imgUrl",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "id",
+				"value": "bind:Widgets.livelist3.selecteditem.id",
+				"type": "java.lang.Integer"
+			},
+			{
+				"isList": false,
+				"target": "category",
+				"value": "bind:Widgets.livelist3.selecteditem.category",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "price",
+				"value": "bind:Widgets.livelist3.selecteditem.price",
+				"type": "java.lang.Double"
+			},
+			{
+				"isList": false,
+				"target": "description",
+				"value": "bind:Widgets.livelist3.selecteditem.description",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "name",
+				"value": "bind:Widgets.livelist3.selecteditem.name",
+				"type": "java.lang.String"
+			},
+			{
+				"isList": false,
+				"target": "availability",
+				"value": "bind:Widgets.livelist3.selecteditem.availability",
+				"type": "java.lang.Boolean"
+			}
+		],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-Static_Product_data_Laptop-wm.Variable-1450086660204",
+		"$$hashKey": "object:1559"
+	},
+	"EshoppingProductorderData": {
+		"name": "EshoppingProductorderData",
+		"type": "Productorder",
+		"isList": true,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"operation": "read",
+		"startUpdate": true,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"bindCount": 2,
+		"package": "com.eshop.eshopping.Productorder",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "user",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "USER_ID",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": true,
+					"defaultValue": null,
+					"relatedTableName": "USER",
+					"relatedEntityName": "User",
+					"columns": [
+						{
+							"fieldName": "id",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "ID",
+							"isPrimaryKey": true,
+							"notNull": true,
+							"length": 255,
+							"generator": "identity",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "landmark",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "LANDMARK",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "phone",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PHONE",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 15,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "pin",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PIN",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "email",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "EMAIL",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "street",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "STREET",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "name",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "NAME",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "productBought",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PRODUCT_BOUGHT",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "password",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PASSWORD",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "country",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "COUNTRY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "city",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "CITY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "role",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "ROLE",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						}
+					],
+					"relatedFieldName": "user.id",
+					"isList": false
+				},
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "status",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "STATUS",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
+				"id"
+			],
+			"entityName": "Productorder",
+			"fullyQualifiedName": "com.eshop.eshopping.Productorder",
+			"tableType": "TABLE"
+		},
+		"_id": "wm-EshoppingProductorderData-wm.LiveVariable-1448967110394",
+		"isDefault": true,
+		"tableName": "PRODUCTORDER",
+		"relatedTables": [
+			{
+				"relationName": "user",
+				"package": "com.eshop.eshopping.Productorder",
+				"watchOn": "EshoppingUserData",
+				"columnName": "user",
+				"type": "User"
+			}
+		],
+		"dbSystem": "HSQLDB",
+		"properties": [
+			"user"
+		],
+		"category": "wm.LiveVariable",
+		"tableType": "TABLE",
+		"$$hashKey": "object:1548"
+	},
+	"loginVariable": {
+		"name": "loginVariable",
+		"type": "string",
+		"owner": "App",
+		"dataSet": {
+			"username": "",
+			"password": ""
+		},
+		"dataBinding": [
+			{
+				"target": "username",
+				"value": "bind:Widgets.Username.datavalue",
+				"type": "string"
+			},
+			{
+				"target": "password",
+				"value": "bind:Widgets.passwordtext.datavalue",
+				"type": "string"
+			}
+		],
+		"saveInPhonegap": false,
+		"startUpdate": false,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"onSuccess": "goToPage_Main",
+		"onError": "Javascript",
+		"useDefaultSuccessHandler": false,
+		"category": "wm.LoginVariable",
+		"_id": "wm-loginVariable-wm.LoginVariable-1448969207395",
+		"$$hashKey": "object:1553"
+	},
+	"InsertCart": {
+		"name": "InsertCart",
+		"type": "Itemorder",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"target": "product",
+				"value": "bind:Variables.Product_obj.dataSet.data[0]",
+				"type": "number"
+			},
+			{
+				"target": "status",
+				"value": "In Cart",
+				"type": "string"
+			},
+			{
+				"target": "user",
+				"value": "bind:Variables.user_obj.dataSet.data[0]",
+				"type": "number"
+			},
+			{
+				"target": "quantity",
+				"value": "bind:1",
+				"type": "number"
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"operation": "insert",
+		"startUpdate": false,
+		"autoUpdate": false,
+		"inFlightBehavior": "executeAll",
+		"transformationRequired": false,
+		"onSuccess": "goToPage_Cart;EshoppingExecute_Total_InCart;EshoppingExecute_Total_Price",
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"package": "com.eshop.eshopping.Itemorder",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "product",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "PRODUCT_ID",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": true,
+					"defaultValue": null,
+					"relatedTableName": "PRODUCT",
+					"relatedEntityName": "Product",
+					"columns": [
+						{
+							"fieldName": "id",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "ID",
+							"isPrimaryKey": true,
+							"notNull": true,
+							"length": 255,
+							"generator": "identity",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "imgUrl",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "IMG_URL",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "category",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "CATEGORY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "price",
+							"type": "double",
+							"hibernateType": "double",
+							"fullyQualifiedType": "double",
+							"columnName": "PRICE",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "description",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "DESCRIPTION",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "name",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "NAME",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "availability",
+							"type": "boolean",
+							"hibernateType": "boolean",
+							"fullyQualifiedType": "boolean",
+							"columnName": "AVAILABILITY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						}
+					],
+					"relatedFieldName": "product.id",
+					"isList": false
+				},
+				{
+					"fieldName": "user",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "USER_ID",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": true,
+					"defaultValue": null,
+					"relatedTableName": "USER",
+					"relatedEntityName": "User",
+					"columns": [
+						{
+							"fieldName": "id",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "ID",
+							"isPrimaryKey": true,
+							"notNull": true,
+							"length": 255,
+							"generator": "identity",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "landmark",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "LANDMARK",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "phone",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PHONE",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 15,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "pin",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PIN",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "email",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "EMAIL",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "street",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "STREET",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "name",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "NAME",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "productBought",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PRODUCT_BOUGHT",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "password",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PASSWORD",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "country",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "COUNTRY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "city",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "CITY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "role",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "ROLE",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						}
+					],
+					"relatedFieldName": "user.id",
+					"isList": false
+				},
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "status",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "STATUS",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "quantity",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "QUANTITY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
+				"id"
+			],
+			"entityName": "Itemorder",
+			"fullyQualifiedName": "com.eshop.eshopping.Itemorder",
+			"tableType": "TABLE"
+		},
+		"_id": "wm-InsertCart-wm.LiveVariable-1450090933838",
+		"tableName": "ITEMORDER",
+		"relatedTables": [
+			{
+				"relationName": "product",
+				"package": "com.eshop.eshopping.Itemorder",
+				"watchOn": "EshoppingProductData",
+				"columnName": "product",
+				"type": "Product"
+			},
+			{
+				"relationName": "user",
+				"package": "com.eshop.eshopping.Itemorder",
+				"watchOn": "EshoppingUserData",
+				"columnName": "user",
+				"type": "User"
+			}
+		],
+		"properties": [
+			"product",
+			"user"
+		],
+		"inputFields": {},
+		"category": "wm.LiveVariable",
+		"filterFields": {},
+		"tableType": "TABLE",
+		"$$hashKey": "object:1551"
+	},
+	"user_obj": {
+		"name": "user_obj",
+		"type": "User",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"target": "id",
+				"value": "bind:Variables.loggedInUser.dataSet.id",
+				"type": "number"
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 1,
+		"designMaxResults": 1,
+		"operation": "read",
+		"startUpdate": true,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeAll",
+		"transformationRequired": false,
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"package": "com.eshop.eshopping.User",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "landmark",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "LANDMARK",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "phone",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PHONE",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 15,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "pin",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PIN",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "email",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "EMAIL",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "street",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "STREET",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "name",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "NAME",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "productBought",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PRODUCT_BOUGHT",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "password",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PASSWORD",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "country",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "COUNTRY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "city",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "CITY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "role",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "ROLE",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
+				"id"
+			],
+			"entityName": "User",
+			"fullyQualifiedName": "com.eshop.eshopping.User",
+			"tableType": "TABLE"
+		},
+		"category": "wm.LiveVariable",
+		"_id": "wm-user_obj-wm.LiveVariable-1450092190771",
+		"filterFields": {},
+		"tableName": "USER",
+		"tableType": "TABLE",
+		"$$hashKey": "object:1561"
+	},
+	"EshoppingExecute_Total_Price": {
+		"name": "EshoppingExecute_Total_Price",
+		"type": "eshopping_Total_PricertnType",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"target": "data",
+				"value": "In Cart",
+				"type": "string"
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"service": "eshopping",
+		"operation": "execute_Total_Price",
+		"operationType": "get",
+		"startUpdate": true,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeAll",
+		"transformationRequired": false,
+		"wmServiceOperationInfo": {
+			"httpMethod": "get",
+			"relativePath": "/eshopping/queryExecutor/queries/_Total_Price",
+			"name": "execute_Total_Price",
+			"parameters": [
+				{
+					"name": "data",
+					"parameterType": "query",
+					"type": "string"
+				},
+				{
+					"name": "page",
+					"parameterType": "query",
+					"type": "integer"
+				},
+				{
+					"name": "size",
+					"parameterType": "query",
+					"type": "integer"
+				},
+				{
+					"name": "sort",
+					"parameterType": "query",
+					"type": "string"
+				}
+			]
+		},
+		"serviceType": "DataService",
+		"category": "wm.ServiceVariable",
+		"_id": "wm-EshoppingExecute_Total_Price-wm.ServiceVariable-1450089838621",
+		"isDefault": true,
+		"$$hashKey": "object:1542"
+	},
+	"EshoppingUserData": {
+		"name": "EshoppingUserData",
+		"type": "User",
+		"isList": true,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"operation": "read",
+		"startUpdate": true,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"bindCount": 1,
+		"package": "com.eshop.eshopping.User",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "landmark",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "LANDMARK",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "phone",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PHONE",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 15,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "pin",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PIN",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "email",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "EMAIL",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "street",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "STREET",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "name",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "NAME",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "productBought",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PRODUCT_BOUGHT",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "password",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "PASSWORD",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "country",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "COUNTRY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "city",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "CITY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "role",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "ROLE",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
+				"id"
+			],
+			"entityName": "User",
+			"fullyQualifiedName": "com.eshop.eshopping.User",
+			"tableType": "TABLE"
+		},
+		"_id": "wm-EshoppingUserData-wm.LiveVariable-1448967110394",
+		"isDefault": true,
+		"tableName": "USER",
+		"dbSystem": "HSQLDB",
+		"category": "wm.LiveVariable",
+		"tableType": "TABLE",
+		"$$hashKey": "object:1549"
+	},
+	"goToPage_Profile": {
+		"name": "goToPage_Profile",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Profile",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Profile-wm.NavigationVariable-1448960453930"
+	},
+	"goToPage_Product_cameras": {
+		"name": "goToPage_Product_cameras",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Product_cameras",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Product_cameras-wm.NavigationVariable-1450083631362"
+	},
+	"EshoppingExecute_Total_InCart": {
+		"name": "EshoppingExecute_Total_InCart",
+		"type": "eshopping_Total_InCartrtnType",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"service": "eshopping",
+		"operation": "execute_Total_InCart",
+		"startUpdate": false,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"wmServiceOperationInfo": {
+			"httpMethod": "get",
+			"relativePath": "/eshopping/queryExecutor/queries/_Total_InCart",
+			"name": "execute_Total_InCart",
+			"parameters": [
+				{
+					"name": "page",
+					"parameterType": "query",
+					"type": "integer"
+				},
+				{
+					"name": "size",
+					"parameterType": "query",
+					"type": "integer"
+				},
+				{
+					"name": "sort",
+					"parameterType": "query",
+					"type": "string"
+				}
+			]
+		},
+		"serviceType": "DataService",
+		"category": "wm.ServiceVariable",
+		"_id": "wm-EshoppingExecute_Total_InCart-wm.ServiceVariable-1450172698588",
+		"isDefault": true,
+		"$$hashKey": "object:1541"
+	},
+	"goToPage_Products": {
+		"name": "goToPage_Products",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Products",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Products-wm.NavigationVariable-1450077286063"
+	},
+	"EshoppingExecuteOrdered": {
+		"name": "EshoppingExecuteOrdered",
+		"type": "eshoppingOrderedrtnType",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"target": "data",
+				"value": "Ordered",
+				"type": "string"
+			},
+			{
+				"target": "data2",
+				"value": "In Cart",
+				"type": "string"
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"service": "eshopping",
+		"operation": "executeOrdered",
+		"operationType": "put",
+		"startUpdate": false,
+		"autoUpdate": false,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"onSuccess": "goToPage_Orders",
+		"wmServiceOperationInfo": {
+			"httpMethod": "put",
+			"relativePath": "/eshopping/queryExecutor/queries/Ordered",
+			"name": "executeOrdered",
+			"parameters": [
+				{
+					"name": "data",
+					"parameterType": "query",
+					"type": "string"
+				},
+				{
+					"name": "data2",
+					"parameterType": "query",
+					"type": "string"
+				}
+			],
+			"consumes": [
+				"application/x-www-form-urlencoded"
+			]
+		},
+		"serviceType": "DataService",
+		"category": "wm.ServiceVariable",
+		"_id": "wm-EshoppingExecuteOrdered-wm.ServiceVariable-1450089641366",
+		"isDefault": true,
+		"$$hashKey": "object:1544"
+	},
+	"loggedInUser": {
+		"name": "loggedInUser",
+		"type": "string",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"id": "",
+			"tenantId": "",
+			"isAuthenticated": false,
+			"isSecurityEnabled": true,
+			"name": "",
+			"roles": []
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-loggedInUser-wm.Variable-1448969207397",
+		"$$hashKey": "object:1552"
+	},
+	"goToPage_Categories": {
+		"name": "goToPage_Categories",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Categories",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Categories-wm.NavigationVariable-1448960688452"
+	},
+	"EshoppingExecute_OrderedLists": {
+		"type": "eshopping_OrderedListsrtnType",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"target": "LoggedinUserID",
+				"type": "integer",
+				"value": "bind:Variables.loggedInUser.dataSet.id"
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"service": "eshopping",
+		"operation": "execute_OrderedLists",
+		"operationType": "get",
+		"startUpdate": false,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"serviceType": "DataService",
+		"category": "wm.ServiceVariable",
+		"isDefault": true,
+		"wmServiceOperationInfo": {
+			"httpMethod": "get",
+			"name": "execute_OrderedLists",
+			"relativePath": "/eshopping/queryExecutor/queries/_OrderedLists",
+			"parameters": [
+				{
+					"name": "LoggedinUserID",
+					"parameterType": "query",
+					"type": "integer"
+				},
+				{
+					"name": "page",
+					"parameterType": "query",
+					"type": "integer"
+				},
+				{
+					"name": "size",
+					"parameterType": "query",
+					"type": "integer"
+				},
+				{
+					"name": "sort",
+					"parameterType": "query",
+					"type": "string"
+				}
+			]
+		},
+		"_id": "wm-EshoppingExecute_OrderedLists-wm.ServiceVariable-1450702603666",
+		"name": "EshoppingExecute_OrderedLists",
+		"$$hashKey": "object:3600"
+	},
+	"EshoppingItemorderData": {
+		"name": "EshoppingItemorderData",
+		"type": "Itemorder",
+		"isList": true,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"operation": "read",
+		"startUpdate": true,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"bindCount": 1,
+		"package": "com.eshop.eshopping.Itemorder",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "product",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "PRODUCT_ID",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": true,
+					"defaultValue": null,
+					"relatedTableName": "PRODUCT",
+					"relatedEntityName": "Product",
+					"columns": [
+						{
+							"fieldName": "id",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "ID",
+							"isPrimaryKey": true,
+							"notNull": true,
+							"length": 255,
+							"generator": "identity",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "imgUrl",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "IMG_URL",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "category",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "CATEGORY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "price",
+							"type": "double",
+							"hibernateType": "double",
+							"fullyQualifiedType": "double",
+							"columnName": "PRICE",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "description",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "DESCRIPTION",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "name",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "NAME",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "availability",
+							"type": "boolean",
+							"hibernateType": "boolean",
+							"fullyQualifiedType": "boolean",
+							"columnName": "AVAILABILITY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						}
+					],
+					"relatedFieldName": "product.id",
+					"isList": false
+				},
+				{
+					"fieldName": "user",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "USER_ID",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": true,
+					"defaultValue": null,
+					"relatedTableName": "USER",
+					"relatedEntityName": "User",
+					"columns": [
+						{
+							"fieldName": "id",
+							"type": "integer",
+							"hibernateType": "integer",
+							"fullyQualifiedType": "integer",
+							"columnName": "ID",
+							"isPrimaryKey": true,
+							"notNull": true,
+							"length": 255,
+							"generator": "identity",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "landmark",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "LANDMARK",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "phone",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PHONE",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 15,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "pin",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PIN",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "email",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "EMAIL",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "street",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "STREET",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "name",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "NAME",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "productBought",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PRODUCT_BOUGHT",
+							"isPrimaryKey": false,
+							"notNull": false,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "password",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "PASSWORD",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "country",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "COUNTRY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "city",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "CITY",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						},
+						{
+							"fieldName": "role",
+							"type": "string",
+							"hibernateType": "string",
+							"fullyQualifiedType": "string",
+							"columnName": "ROLE",
+							"isPrimaryKey": false,
+							"notNull": true,
+							"length": 255,
+							"generator": "assigned",
+							"isRelated": false,
+							"defaultValue": null
+						}
+					],
+					"relatedFieldName": "user.id",
+					"isList": false
+				},
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "status",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "STATUS",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "quantity",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "QUANTITY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
+				"id"
+			],
+			"entityName": "Itemorder",
+			"fullyQualifiedName": "com.eshop.eshopping.Itemorder",
+			"tableType": "TABLE"
+		},
+		"_id": "wm-EshoppingItemorderData-wm.LiveVariable-1448967110383",
+		"isDefault": true,
+		"tableName": "ITEMORDER",
+		"relatedTables": [
+			{
+				"relationName": "product",
+				"package": "com.eshop.eshopping.Itemorder",
+				"watchOn": "EshoppingProductData",
+				"columnName": "product",
+				"type": "Product"
+			},
+			{
+				"relationName": "user",
+				"package": "com.eshop.eshopping.Itemorder",
+				"watchOn": "EshoppingUserData",
+				"columnName": "user",
+				"type": "User"
+			}
+		],
+		"dbSystem": "HSQLDB",
+		"properties": [
+			"product",
+			"user"
+		],
+		"category": "wm.LiveVariable",
+		"filterFields": {},
+		"tableType": "TABLE",
+		"$$hashKey": "object:1545"
+	},
+	"goToPage_Categories_accsries": {
+		"name": "goToPage_Categories_accsries",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Categories_accsries",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Categories_accsries-wm.NavigationVariable-1449121157907"
+	},
+	"supportedLocale": {
+		"name": "supportedLocale",
+		"type": "string",
+		"isList": false,
+		"owner": "App",
+		"dataSet": {
+			"en": "English"
+		},
+		"dataBinding": [],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-supportedLocale-wm.Variable1402640443182",
+		"$$hashKey": "object:1560"
+	},
+	"goToPage_Categories_periphrls": {
+		"name": "goToPage_Categories_periphrls",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Categories_periphrls",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Categories_periphrls-wm.NavigationVariable-1449121237159"
+	},
+	"goToPage_Categories_Cameras": {
+		"name": "goToPage_Categories_Cameras",
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Categories_Cameras",
+		"dataBinding": {},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Categories_Cameras-wm.NavigationVariable-1449147766571"
+	}
 }

@@ -5,9 +5,6 @@
         <parameter name="data2" typeRef="java.lang.String" isList="false"/>
         <return typeRef="eshoppingOrderedrtnType" isList="false"/>
     </operation>
-    <operation operationType="nativequery" name="_OrderedLists">
-        <return typeRef="eshopping_OrderedListsrtnType" isList="false"/>
-    </operation>
     <operation operationType="nativequery" name="_Total_Price">
         <parameter name="data" typeRef="java.lang.String" isList="false"/>
         <return typeRef="eshopping_Total_PricertnType" isList="false"/>
@@ -19,6 +16,10 @@
     </operation>
     <operation operationType="nativequery" name="_Total_InCart">
         <return typeRef="eshopping_Total_InCartrtnType" isList="false"/>
+    </operation>
+    <operation operationType="nativequery" name="_OrderedLists">
+        <parameter name="LoggedinUserID" typeRef="java.lang.Integer" isList="false"/>
+        <return typeRef="eshopping_OrderedListsrtnType" isList="false"/>
     </operation>
     <dataobjects>
         <dataobject javaType="com.eshop.eshopping.Product">
@@ -68,19 +69,19 @@
             <element name="quantity" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
         </dataobject>
         <dataobject javaType="eshoppingOrderedrtnType"/>
-        <dataobject javaType="eshopping_OrderedListsrtnType">
-            <element name="NAME" typeRef="java.lang.String"/>
-            <element name="PID" typeRef="java.lang.Integer"/>
-            <element name="ID" typeRef="java.lang.Integer"/>
-            <element name="STATUS" typeRef="java.lang.String"/>
-            <element name="QUANTITY" typeRef="java.lang.Integer"/>
-        </dataobject>
         <dataobject javaType="eshopping_Total_PricertnType">
             <element name="C1" typeRef="java.lang.String"/>
         </dataobject>
         <dataobject javaType="eshoppingcancelledrtnType"/>
         <dataobject javaType="eshopping_Total_InCartrtnType">
             <element name="TOTAL" typeRef="java.math.BigInteger"/>
+        </dataobject>
+        <dataobject javaType="eshopping_OrderedListsrtnType">
+            <element name="NAME" typeRef="java.lang.String"/>
+            <element name="PID" typeRef="java.lang.Integer"/>
+            <element name="ID" typeRef="java.lang.Integer"/>
+            <element name="STATUS" typeRef="java.lang.String"/>
+            <element name="QUANTITY" typeRef="java.lang.Integer"/>
         </dataobject>
     </dataobjects>
 </service>
