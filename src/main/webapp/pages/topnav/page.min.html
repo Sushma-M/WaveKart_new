@@ -27,18 +27,18 @@ Application.$controller("topnavPageController", ["$scope", function ($scope) {
 </script>
 <script id="topnav.variables.json">
 var _topnavPage_Variables_ ={
-  "navigationVariable1" : {
-    "operation" : "gotoPage",
-    "category" : "wm.NavigationVariable",
-    "pageName" : "Cart",
-    "_id" : "wm-navigationVariable1-wm.NavigationVariable-1449038121267",
-    "dataBinding" : {
-      "pageName" : ""
-    },
-    "name" : "navigationVariable1",
-    "owner" : "Page",
-    "pageTransitions" : "none"
-  }
+	"navigationVariable1": {
+		"name": "navigationVariable1",
+		"owner": "Page",
+		"operation": "gotoPage",
+		"pageName": "Cart",
+		"dataBinding": {
+			"pageName": ""
+		},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-navigationVariable1-wm.NavigationVariable-1449038121267"
+	}
 }
 </script>
 <script id="topnav.html" type="text/ng-template">
@@ -55,7 +55,7 @@ var _topnavPage_Variables_ ={
                 <wm-anchor on-click="goToPage_Admin" caption="Admin" iconclass="glyphicon glyphicon-user" name="AdminPage" accessroles="admin"></wm-anchor>
             </wm-nav-item>
             <wm-nav-item name="nav_item6">
-                <wm-anchor caption="Login" iconclass="glyphicon glyphicon-log-in" name="Login" on-click="CommonLoginDialog.show" show="bind:!Variables.loggedInUser.dataSet.isAuthenticated"></wm-anchor>
+                <wm-anchor caption="Login" iconclass="glyphicon glyphicon-log-in" name="Login" on-click="CommonLoginDialog.show" show="true" accessroles="Anonymous"></wm-anchor>
             </wm-nav-item>
         </wm-nav>
         <wm-nav name="rightTopLinks" type="navbar" class="navbar-right">
@@ -69,7 +69,7 @@ var _topnavPage_Variables_ ={
                 <wm-anchor on-click="goToPage_Profile" caption="My Profile" iconclass="glyphicon glyphicon-user" name="MyProfile" accessroles="user"></wm-anchor>
             </wm-nav-item>
             <wm-nav-item name="nav_item8">
-                <wm-anchor caption="Logout" iconclass="glyphicon glyphicon-log-out" name="Logout" on-click="logoutVariable" show="bind:Variables.loggedInUser.dataSet.isAuthenticated"></wm-anchor>
+                <wm-anchor caption="Logout" iconclass="glyphicon glyphicon-log-out" name="Logout" on-click="logoutVariable" show="bind:Variables.loggedInUser.dataSet.isAuthenticated" accessroles="Authenticated"></wm-anchor>
             </wm-nav-item>
         </wm-nav>
     </wm-navbar>

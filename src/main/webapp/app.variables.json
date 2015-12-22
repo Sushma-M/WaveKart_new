@@ -394,8 +394,7 @@
 							"length": 255,
 							"generator": "identity",
 							"isRelated": false,
-							"defaultValue": null,
-							"isRelatedPk": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "imgUrl",
@@ -408,8 +407,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "category",
@@ -422,8 +420,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "price",
@@ -436,8 +433,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "description",
@@ -450,8 +446,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "name",
@@ -464,8 +459,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "availability",
@@ -478,13 +472,11 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						}
 					],
 					"relatedFieldName": "product.id",
-					"isList": false,
-					"disableInlineEditing": "true"
+					"isList": false
 				},
 				{
 					"fieldName": "productorder",
@@ -512,8 +504,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": true,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "id",
@@ -526,8 +517,7 @@
 							"length": 255,
 							"generator": "identity",
 							"isRelated": false,
-							"defaultValue": null,
-							"isRelatedPk": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "status",
@@ -540,13 +530,11 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						}
 					],
 					"relatedFieldName": "productorder.id",
-					"isList": false,
-					"disableInlineEditing": "true"
+					"isList": false
 				},
 				{
 					"fieldName": "id",
@@ -1187,8 +1175,7 @@
 							"length": 255,
 							"generator": "identity",
 							"isRelated": false,
-							"defaultValue": null,
-							"isRelatedPk": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "landmark",
@@ -1201,8 +1188,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "phone",
@@ -1215,8 +1201,7 @@
 							"length": 15,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "pin",
@@ -1229,8 +1214,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "email",
@@ -1243,8 +1227,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "street",
@@ -1257,8 +1240,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "name",
@@ -1271,8 +1253,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "productBought",
@@ -1285,8 +1266,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "password",
@@ -1299,8 +1279,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "country",
@@ -1313,8 +1292,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "city",
@@ -1327,8 +1305,7 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "role",
@@ -1341,13 +1318,11 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						}
 					],
 					"relatedFieldName": "user.id",
-					"isList": false,
-					"disableInlineEditing": "true"
+					"isList": false
 				},
 				{
 					"fieldName": "id",
@@ -2399,11 +2374,14 @@
 		"autoUpdate": false,
 		"inFlightBehavior": "executeLast",
 		"transformationRequired": false,
-		"onSuccess": "goToPage_Orders",
+		"onSuccess": "goToPage_Orders;EshoppingExecute_OrderedLists",
 		"wmServiceOperationInfo": {
 			"httpMethod": "put",
-			"relativePath": "/eshopping/queryExecutor/queries/Ordered",
 			"name": "executeOrdered",
+			"relativePath": "/eshopping/queryExecutor/queries/Ordered",
+			"consumes": [
+				"application/x-www-form-urlencoded"
+			],
 			"parameters": [
 				{
 					"name": "data",
@@ -2415,15 +2393,13 @@
 					"parameterType": "query",
 					"type": "string"
 				}
-			],
-			"consumes": [
-				"application/x-www-form-urlencoded"
 			]
 		},
 		"serviceType": "DataService",
 		"category": "wm.ServiceVariable",
 		"_id": "wm-EshoppingExecuteOrdered-wm.ServiceVariable-1450089641366",
-		"isDefault": true
+		"isDefault": true,
+		"controller": "QueryExecution"
 	},
 	"loggedInUser": {
 		"name": "loggedInUser",
@@ -2509,7 +2485,8 @@
 				}
 			]
 		},
-		"_id": "wm-EshoppingExecute_OrderedLists-wm.ServiceVariable-1450702603666"
+		"_id": "wm-EshoppingExecute_OrderedLists-wm.ServiceVariable-1450702603666",
+		"controller": "QueryExecution"
 	},
 	"EshoppingItemorderData": {
 		"name": "EshoppingItemorderData",

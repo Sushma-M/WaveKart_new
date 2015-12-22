@@ -11,7 +11,7 @@
                 <wm-anchor on-click="goToPage_Admin" caption="Admin" iconclass="glyphicon glyphicon-user" name="AdminPage" accessroles="admin"></wm-anchor>
             </wm-nav-item>
             <wm-nav-item name="nav_item6">
-                <wm-anchor caption="Login" iconclass="glyphicon glyphicon-log-in" name="Login" on-click="CommonLoginDialog.show" show="bind:!Variables.loggedInUser.dataSet.isAuthenticated"></wm-anchor>
+                <wm-anchor caption="Login" iconclass="glyphicon glyphicon-log-in" name="Login" on-click="CommonLoginDialog.show" show="true" accessroles="Anonymous"></wm-anchor>
             </wm-nav-item>
         </wm-nav>
         <wm-nav name="rightTopLinks" type="navbar" class="navbar-right">
@@ -25,7 +25,7 @@
                 <wm-anchor on-click="goToPage_Profile" caption="My Profile" iconclass="glyphicon glyphicon-user" name="MyProfile" accessroles="user"></wm-anchor>
             </wm-nav-item>
             <wm-nav-item name="nav_item8">
-                <wm-anchor caption="Logout" iconclass="glyphicon glyphicon-log-out" name="Logout" on-click="logoutVariable" show="bind:Variables.loggedInUser.dataSet.isAuthenticated"></wm-anchor>
+                <wm-anchor caption="Logout" iconclass="glyphicon glyphicon-log-out" name="Logout" on-click="logoutVariable" show="bind:Variables.loggedInUser.dataSet.isAuthenticated" accessroles="Authenticated"></wm-anchor>
             </wm-nav-item>
         </wm-nav>
     </wm-navbar>

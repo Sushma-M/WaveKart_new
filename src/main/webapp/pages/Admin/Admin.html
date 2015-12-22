@@ -201,7 +201,7 @@
                             </wm-liveform>
                         </wm-livegrid>
                         <wm-livegrid name="OrderdetailLivegrid5" service="eshopping@Orderdetail" formlayout="dialog">
-                            <wm-grid deleterow="true" updaterow="true" insertrow="true" gridfirstrowselect="true" readonlygrid="false" name="OrderdetailGrid5" dataset="bind:Variables.EshoppingOrderdetailData.dataSet" gridsearch="false">
+                            <wm-grid deleterow="true" updaterow="true" insertrow="true" gridfirstrowselect="true" readonlygrid="false" name="OrderdetailGrid5" dataset="bind:Variables.EshoppingOrderdetailData.dataSet" gridsearch="false" showrecordcount="true">
                                 <wm-grid-column binding="id" caption="Id" type="integer" primary-key="true" generator="identity" readonly="true" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                                 <wm-grid-column binding="quantity" caption="Quantity" type="integer" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                                 <wm-grid-column binding="productorder.id" caption="Productorder Id" type="integer" primary-key="true" generator="identity" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>

@@ -1,14 +1,14 @@
 {
-  "navigationVariable1" : {
-    "operation" : "gotoPage",
-    "category" : "wm.NavigationVariable",
-    "pageName" : "Cart",
-    "_id" : "wm-navigationVariable1-wm.NavigationVariable-1449038121267",
-    "dataBinding" : {
-      "pageName" : ""
-    },
-    "name" : "navigationVariable1",
-    "owner" : "Page",
-    "pageTransitions" : "none"
-  }
+	"navigationVariable1": {
+		"name": "navigationVariable1",
+		"owner": "Page",
+		"operation": "gotoPage",
+		"pageName": "Cart",
+		"dataBinding": {
+			"pageName": ""
+		},
+		"pageTransitions": "none",
+		"category": "wm.NavigationVariable",
+		"_id": "wm-navigationVariable1-wm.NavigationVariable-1449038121267"
+	}
 }
