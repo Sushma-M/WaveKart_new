@@ -35,9 +35,8 @@ var _Product_searchPage_Variables_ ={ }
         <wm-page-content columnwidth="10" name="page_content1">
             <wm-livelist listclass="media-list" name="livelist1" dataset="bind:Variables.static_product_data_forsearch.dataSet" paddingleft="20" paddingtop="20" paddingright="20" paddingbottom="20" margintop="20">
                 <wm-listtemplate layout="media" name="listtemplate1">
-                    <wm-container class="media-left" name="container4">
-                        <wm-picture class="media-object picture" shape="rounded" name="picture2" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.static_product_data_forsearch.dataSet.data[$i].imgUrl"
-                        height="15em"></wm-picture>
+                    <wm-container class="media-left" name="container4" paddingright="10">
+                        <wm-picture class="media-object picture" shape="rounded" name="picture2" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.static_product_data_forsearch.dataSet.data[$i].imgUrl"></wm-picture>
                     </wm-container>
                     <wm-container class="media-body" data-template-ctr="true" name="container5" paddingleft="10" paddingright="10">
                         <wm-label width="100%" caption="bind:Variables.static_product_data_forsearch.dataSet.name" name="label7" fontsize="18" fontweight="bold" paddingtop="5" margintop="10" marginbottom="10"></wm-label>

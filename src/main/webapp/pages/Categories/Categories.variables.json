@@ -1,133 +1,138 @@
 {
-  "Products_smartphones" : {
-    "isList" : false,
-    "firstRow" : 0,
-    "bindCount" : 1,
-    "inFlightBehavior" : "executeLast",
-    "package" : "com.eshop.eshopping.Product",
-    "ignoreCase" : false,
-    "type" : "Product",
-    "startUpdate" : true,
-    "propertiesMap" : {
-      "primaryKeys" : [ "id" ],
-      "columns" : [ {
-        "precision" : 19,
-        "hibernateType" : "integer",
-        "isRelated" : false,
-        "isPrimaryKey" : true,
-        "length" : 255,
-        "generator" : "identity",
-        "columnName" : "ID",
-        "defaultValue" : null,
-        "notNull" : true,
-        "type" : "integer",
-        "fieldName" : "id",
-        "fullyQualifiedType" : "integer"
-      }, {
-        "precision" : 19,
-        "hibernateType" : "string",
-        "isRelated" : false,
-        "isPrimaryKey" : false,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "IMG_URL",
-        "defaultValue" : null,
-        "notNull" : false,
-        "type" : "string",
-        "fieldName" : "imgUrl",
-        "fullyQualifiedType" : "string"
-      }, {
-        "precision" : 19,
-        "hibernateType" : "string",
-        "isRelated" : false,
-        "isPrimaryKey" : false,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "CATEGORY",
-        "defaultValue" : null,
-        "notNull" : true,
-        "type" : "string",
-        "fieldName" : "category",
-        "fullyQualifiedType" : "string"
-      }, {
-        "precision" : 64,
-        "hibernateType" : "double",
-        "isRelated" : false,
-        "isPrimaryKey" : false,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "PRICE",
-        "defaultValue" : null,
-        "notNull" : true,
-        "type" : "double",
-        "fieldName" : "price",
-        "fullyQualifiedType" : "double"
-      }, {
-        "precision" : 19,
-        "hibernateType" : "string",
-        "isRelated" : false,
-        "isPrimaryKey" : false,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "DESCRIPTION",
-        "defaultValue" : null,
-        "notNull" : true,
-        "type" : "string",
-        "fieldName" : "description",
-        "fullyQualifiedType" : "string"
-      }, {
-        "precision" : 19,
-        "hibernateType" : "string",
-        "isRelated" : false,
-        "isPrimaryKey" : false,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "NAME",
-        "defaultValue" : null,
-        "notNull" : true,
-        "type" : "string",
-        "fieldName" : "name",
-        "fullyQualifiedType" : "string"
-      }, {
-        "precision" : 19,
-        "hibernateType" : "boolean",
-        "isRelated" : false,
-        "isPrimaryKey" : false,
-        "length" : 255,
-        "generator" : "assigned",
-        "columnName" : "AVAILABILITY",
-        "defaultValue" : null,
-        "notNull" : true,
-        "type" : "boolean",
-        "fieldName" : "availability",
-        "fullyQualifiedType" : "boolean"
-      } ],
-      "tableType" : "TABLE",
-      "fullyQualifiedName" : "com.eshop.eshopping.Product",
-      "entityName" : "Product"
-    },
-    "matchMode" : "start",
-    "transformationRequired" : false,
-    "maxResults" : 6,
-    "dataSet" : {
-      "dataValue" : ""
-    },
-    "operation" : "read",
-    "category" : "wm.LiveVariable",
-    "autoUpdate" : true,
-    "_id" : "wm-Products_smartphones-wm.LiveVariable-1449138532259",
-    "dataBinding" : [ {
-      "target" : "category",
-      "value" : "Smartphones",
-      "type" : "string"
-    } ],
-    "saveInPhonegap" : false,
-    "tableName" : "PRODUCT",
-    "filterFields" : { },
-    "name" : "Products_smartphones",
-    "designMaxResults" : 6,
-    "owner" : "Page",
-    "tableType" : "TABLE",
-    "liveSource" : "eshopping"
-  }
+	"Products_smartphones": {
+		"name": "Products_smartphones",
+		"type": "Product",
+		"isList": false,
+		"owner": "Page",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"target": "category",
+				"value": "Smartphones",
+				"type": "string"
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 6,
+		"designMaxResults": 6,
+		"operation": "read",
+		"startUpdate": true,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "eshopping",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"bindCount": 1,
+		"package": "com.eshop.eshopping.Product",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "imgUrl",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "IMG_URL",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "category",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "CATEGORY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "price",
+					"type": "double",
+					"hibernateType": "double",
+					"fullyQualifiedType": "double",
+					"columnName": "PRICE",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "description",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "DESCRIPTION",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "name",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "NAME",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "availability",
+					"type": "boolean",
+					"hibernateType": "boolean",
+					"fullyQualifiedType": "boolean",
+					"columnName": "AVAILABILITY",
+					"isPrimaryKey": false,
+					"notNull": true,
+					"length": 255,
+					"generator": "assigned",
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryFields": [
+				"id"
+			],
+			"entityName": "Product",
+			"fullyQualifiedName": "com.eshop.eshopping.Product",
+			"tableType": "TABLE"
+		},
+		"category": "wm.LiveVariable",
+		"_id": "wm-Products_smartphones-wm.LiveVariable-1449138532259",
+		"tableName": "PRODUCT",
+		"filterFields": {},
+		"tableType": "TABLE"
+	}
 }

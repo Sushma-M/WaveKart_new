@@ -6,8 +6,9 @@
         <wm-page-content columnwidth="10" name="page_content1">
             <wm-livelist listclass="list-group" name="livelist1" navigation="Advanced" pagesize="10" itemsperrow="3" paddingleft="5" paddingright="5" marginleft="1" marginright="1" dataset="bind:Variables.Products_smartphones.dataSet" on-click="goToPage_Products">
                 <wm-listtemplate layout="thumbnail" name="listtemplate1">
-                    <wm-container class="thumbnail" name="container3" height="170px" marginright="5" marginleft="5">
-                        <wm-picture class="picture" shape="thumbnail" name="picture2" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.Products_smartphones.dataSet.data[$i].imgUrl" width="5em" height="5em"></wm-picture>
+                    <wm-container class="thumbnail" name="container3" height="200px" marginright="5" marginleft="5">
+                        <wm-picture class="picture" shape="thumbnail" name="picture2" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.Products_smartphones.dataSet.data[$i].imgUrl" pictureaspect="None"
+                        height="8em"></wm-picture>
                         <wm-container class="caption" data-template-ctr="true" name="container4">
                             <wm-label width="100%" caption="bind:Variables.Products_smartphones.dataSet.name" name="label6" fontweight="bold"></wm-label>
                             <wm-label width="100%" caption="bind:Variables.Products_smartphones.dataSet.data[$i].price | toCurrency: '$'" name="label4" fontweight="bold"></wm-label>

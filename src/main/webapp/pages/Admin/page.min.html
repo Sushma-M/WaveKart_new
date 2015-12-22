@@ -84,7 +84,7 @@ Application.$controller("OrderdetailLiveform5Controller", ["$scope",
 ]);
 </script>
 <script id="Admin.variables.json">
-var _AdminPage_Variables_ ={ }
+var _AdminPage_Variables_ ={}
 </script>
 <script id="Admin.html" type="text/ng-template">
 <wm-page name="page1" data-ng-controller="AdminPageController" pagetitle="Admin">
@@ -154,76 +154,99 @@ var _AdminPage_Variables_ ={ }
                     <wm-tabcontent name="tabcontent2">
                         <wm-livegrid name="UserLivegrid3" service="eshopping@User" formlayout="dialog">
                             <wm-grid deleterow="true" updaterow="true" insertrow="true" gridfirstrowselect="true" readonlygrid="false" name="UserGrid3" dataset="bind:Variables.EshoppingUserData.dataSet" gridsearch="true">
-                                <wm-grid-column binding="id" caption="Id" type="integer" primary-key="true" generator="identity" readonly="true" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
-                                <wm-grid-column binding="landmark" caption="Landmark" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
-                                <wm-grid-column binding="phone" caption="Phone" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
-                                <wm-grid-column binding="pin" caption="Pin" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
-                                <wm-grid-column binding="email" caption="Email" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
-                                <wm-grid-column binding="street" caption="Street" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
-                                <wm-grid-column binding="name" caption="Name" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
-                                <wm-grid-column binding="productBought" caption="Product Bought" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
-                                <wm-grid-column binding="password" caption="Password" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
-                                <wm-grid-column binding="country" caption="Country" type="string" generator="assigned" readonly="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="id" caption="Id" type="integer" backgroundcolor="" textcolor="" primary-key="true" generator="identity" readonly="readonly" col-class="" col-ng-class="" search-placeholder="Search" disable-inline-editing="false"
+                                is-related-pk="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="landmark" caption="Landmark" type="string" backgroundcolor="" textcolor="" primary-key="" generator="assigned" col-class="" col-ng-class="" search-placeholder="Search" disable-inline-editing="false"
+                                is-related-pk="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="phone" caption="Phone" type="string" backgroundcolor="" textcolor="" primary-key="" generator="assigned" col-class="" col-ng-class="" search-placeholder="Search" disable-inline-editing="false"
+                                is-related-pk="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="pin" caption="Pin" type="string" backgroundcolor="" textcolor="" primary-key="" generator="assigned" col-class="" col-ng-class="" search-placeholder="Search" disable-inline-editing="false"
+                                is-related-pk="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="email" caption="Email" type="string" backgroundcolor="" textcolor="" primary-key="" generator="assigned" col-class="" col-ng-class="" search-placeholder="Search" disable-inline-editing="false"
+                                is-related-pk="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="street" caption="Street" type="string" backgroundcolor="" textcolor="" primary-key="" generator="assigned" col-class="" col-ng-class="" search-placeholder="Search" disable-inline-editing="false"
+                                is-related-pk="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="name" caption="Name" type="string" backgroundcolor="" textcolor="" primary-key="" generator="assigned" col-class="" col-ng-class="" search-placeholder="Search" disable-inline-editing="false"
+                                is-related-pk="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="productBought" caption="Product Bought" type="string" backgroundcolor="" textcolor="" primary-key="" generator="assigned" col-class="" col-ng-class="" search-placeholder="Search"
+                                disable-inline-editing="false" is-related-pk="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="password" caption="Password" type="string" backgroundcolor="" textcolor="" primary-key="" generator="assigned" col-class="" col-ng-class="" search-placeholder="Search" disable-inline-editing="false"
+                                is-related-pk="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="country" caption="Country" type="string" backgroundcolor="" textcolor="" primary-key="" generator="assigned" col-class="" col-ng-class="" search-placeholder="Search" disable-inline-editing="false"
+                                is-related-pk="false" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="city" caption="City" type="string" generator="assigned" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="role" caption="Role" type="string" generator="assigned" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                                 <wm-grid-action key="addNewRow" display-name="New" show="true" class="btn-primary" iconclass="glyphicon glyphicon-plus" action="addNewRow()"></wm-grid-action>
                             </wm-grid>
                             <wm-liveform novalidate="false" title="Details" name="UserLiveform3" dataset="bind:Variables.EshoppingUserData.dataSet" formlayout="dialog">
                                 <wm-layoutgrid name="layoutgrid2">
                                     <wm-gridrow name="gridrow8">
-                                        <wm-gridcolumn show="hide" name="gridcolumn8" columnwidth="12">
-                                            <wm-form-field display-name="Id" show="false" primary-key="true" generator="identity" key="id" type="integer" is-related="false" readonly="true" required="true" name="form_field8"></wm-form-field>
-                                        </wm-gridcolumn>
-                                        <wm-gridcolumn show="show" name="gridcolumn9" columnwidth="12">
-                                            <wm-form-field display-name="Landmark" show="true" primary-key="false" generator="assigned" key="landmark" type="string" maxvalue="255" is-related="false" readonly="false" required="true" name="form_field9"></wm-form-field>
-                                        </wm-gridcolumn>
+                                        <wm-gridcolumn show="hide" name="gridcolumn8" columnwidth="12"></wm-gridcolumn>
+                                        <wm-gridcolumn show="show" name="gridcolumn9" columnwidth="12"></wm-gridcolumn>
                                     </wm-gridrow>
                                     <wm-gridrow name="gridrow9">
                                         <wm-gridcolumn show="show" name="gridcolumn10" columnwidth="12">
-                                            <wm-form-field display-name="Phone" show="true" primary-key="false" generator="assigned" key="phone" type="string" maxvalue="15" is-related="false" readonly="false" required="true" name="form_field10"></wm-form-field>
+                                            <wm-form-field name="form_field9" displayname="Landmark" show="true" primary-key="false" generator="assigned" key="landmark" type="string" is-related="false" required="required" pc-display="true" mobile-display="true"
+                                            widget="text" maxchars="255" inputtype="text" regexp=".*" placeholder="Enter value"></wm-form-field>
                                         </wm-gridcolumn>
                                     </wm-gridrow>
                                     <wm-gridrow name="gridrow10">
                                         <wm-gridcolumn show="show" name="gridcolumn11" columnwidth="12">
-                                            <wm-form-field display-name="Pin" show="true" primary-key="false" generator="assigned" key="pin" type="string" maxvalue="255" is-related="false" readonly="false" required="true" name="form_field11"></wm-form-field>
+                                            <wm-form-field name="form_field10" displayname="Phone" show="true" primary-key="false" generator="assigned" key="phone" type="string" is-related="false" required="required" pc-display="true" mobile-display="true"
+                                            widget="text" maxchars="15" inputtype="text" regexp=".*" placeholder="Enter value"></wm-form-field>
                                         </wm-gridcolumn>
                                     </wm-gridrow>
                                     <wm-gridrow name="gridrow11">
                                         <wm-gridcolumn show="show" name="gridcolumn12" columnwidth="12">
-                                            <wm-form-field display-name="Email" show="true" primary-key="false" generator="assigned" key="email" type="string" maxvalue="255" is-related="false" readonly="false" required="true" name="form_field12"></wm-form-field>
+                                            <wm-form-field name="form_field11" displayname="Pin" show="true" primary-key="false" generator="assigned" key="pin" type="string" is-related="false" required="required" pc-display="true" mobile-display="true" widget="text"
+                                            maxchars="255" inputtype="text" regexp=".*" placeholder="Enter value"></wm-form-field>
                                         </wm-gridcolumn>
                                     </wm-gridrow>
                                     <wm-gridrow name="gridrow12">
                                         <wm-gridcolumn show="show" name="gridcolumn13" columnwidth="12">
-                                            <wm-form-field display-name="Street" show="true" primary-key="false" generator="assigned" key="street" type="string" maxvalue="255" is-related="false" readonly="false" required="true" name="form_field13"></wm-form-field>
+                                            <wm-form-field name="form_field12" displayname="Email" show="true" primary-key="false" generator="assigned" key="email" type="string" is-related="false" required="required" pc-display="true" mobile-display="true"
+                                            widget="text" maxchars="255" inputtype="text" regexp=".*" placeholder="Enter value"></wm-form-field>
                                         </wm-gridcolumn>
                                     </wm-gridrow>
                                     <wm-gridrow name="gridrow13">
                                         <wm-gridcolumn show="show" name="gridcolumn14" columnwidth="12">
-                                            <wm-form-field display-name="Name" show="true" primary-key="false" generator="assigned" key="name" type="string" maxvalue="255" is-related="false" readonly="false" required="true" name="form_field14"></wm-form-field>
+                                            <wm-form-field name="form_field13" displayname="Street" show="true" primary-key="false" generator="assigned" key="street" type="string" is-related="false" required="required" pc-display="true" mobile-display="true"
+                                            widget="text" maxchars="255" inputtype="text" regexp=".*" placeholder="Enter value"></wm-form-field>
                                         </wm-gridcolumn>
                                     </wm-gridrow>
                                     <wm-gridrow name="gridrow14">
                                         <wm-gridcolumn show="show" name="gridcolumn15" columnwidth="12">
-                                            <wm-form-field display-name="Product Bought" show="true" primary-key="false" generator="assigned" key="productBought" type="string" maxvalue="255" is-related="false" readonly="false" required="false" name="form_field15"></wm-form-field>
+                                            <wm-form-field name="form_field14" displayname="Name" show="true" primary-key="false" generator="assigned" key="name" type="string" is-related="false" required="required" pc-display="true" mobile-display="true"
+                                            widget="text" maxchars="255" inputtype="text" regexp=".*" placeholder="Enter value"></wm-form-field>
                                         </wm-gridcolumn>
                                     </wm-gridrow>
                                     <wm-gridrow name="gridrow15">
                                         <wm-gridcolumn show="show" name="gridcolumn16" columnwidth="12">
-                                            <wm-form-field display-name="Password" show="true" primary-key="false" generator="assigned" key="password" type="string" maxvalue="255" is-related="false" readonly="false" required="true" name="form_field16"></wm-form-field>
+                                            <wm-form-field name="form_field15" displayname="Product Bought" show="true" primary-key="false" generator="assigned" key="productBought" type="string" is-related="false" pc-display="true" mobile-display="true" widget="text"
+                                            maxchars="255" inputtype="text" regexp=".*" placeholder="Enter value"></wm-form-field>
                                         </wm-gridcolumn>
                                     </wm-gridrow>
                                     <wm-gridrow name="gridrow16">
                                         <wm-gridcolumn show="show" name="gridcolumn17" columnwidth="12">
-                                            <wm-form-field display-name="Country" show="true" primary-key="false" generator="assigned" key="country" type="string" maxvalue="255" is-related="false" readonly="false" required="true" name="form_field17"></wm-form-field>
+                                            <wm-form-field name="form_field16" displayname="Password" show="true" primary-key="false" generator="assigned" key="password" type="string" is-related="false" required="required" pc-display="true" mobile-display="true"
+                                            widget="text" maxchars="255" inputtype="text" regexp=".*" placeholder="Enter value"></wm-form-field>
                                         </wm-gridcolumn>
                                     </wm-gridrow>
                                     <wm-gridrow name="gridrow17">
                                         <wm-gridcolumn show="show" name="gridcolumn18" columnwidth="12">
-                                            <wm-form-field display-name="City" show="true" primary-key="false" generator="assigned" key="city" type="string" maxvalue="255" is-related="false" readonly="false" required="true" name="form_field18"></wm-form-field>
+                                            <wm-form-field name="form_field17" displayname="Country" show="true" primary-key="false" generator="assigned" key="country" type="string" is-related="false" required="required" pc-display="true" mobile-display="true"
+                                            widget="text" maxchars="255" inputtype="text" regexp=".*" placeholder="Enter value"></wm-form-field>
                                         </wm-gridcolumn>
                                     </wm-gridrow>
                                 </wm-layoutgrid>
-                                <wm-form-action key="cancel" class="form-cancel btn-secondary" iconclass="glyphicon glyphicon-remove-circle" action="cancel()" display-name="Cancel" show="true" type="button" update-mode="true"></wm-form-action>
-                                <wm-form-action key="save" class="form-save btn-success" iconclass="glyphicon glyphicon-save" display-name="Save" show="true" type="submit" update-mode="true"></wm-form-action>
+                                <wm-form-field name="form_field18" displayname="City" show="true" primary-key="false" generator="assigned" key="city" type="string" is-related="false" required="required" pc-display="true" mobile-display="true" widget="text"
+                                maxchars="255" inputtype="text" regexp=".*" placeholder="Enter value"></wm-form-field>
+                                <wm-form-field name="role" displayname="Role" show="true" primary-key="false" generator="assigned" key="role" type="string" is-related="false" required="required" pc-display="true" mobile-display="true"
+                                widget="text" maxchars="255"></wm-form-field>
+                                <wm-form-field name="form_field8" displayname="Id" show="false" primary-key="true" generator="identity" key="id" type="integer" is-related="false" readonly="readonly" required="required" pc-display="true"
+                                mobile-display="true" widget="number" inputtype="number" regexp=".*" placeholder="Enter value"></wm-form-field>
+                                <wm-form-action key="cancel" display-name="Cancel" show="true" class="form-cancel btn-secondary" iconclass="glyphicon glyphicon-remove-circle" action="cancel()" type="button" update-mode="true"></wm-form-action>
+                                <wm-form-action key="save" display-name="Save" show="true" class="form-save btn-success" iconclass="glyphicon glyphicon-save" type="submit" update-mode="true"></wm-form-action>
                             </wm-liveform>
                         </wm-livegrid>
                     </wm-tabcontent>

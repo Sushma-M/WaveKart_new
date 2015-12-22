@@ -36,8 +36,8 @@ var _Product_laptopsPage_Variables_ ={};
         <wm-page-content columnwidth="10" name="page_content1">
             <wm-livelist listclass="media-list" itemclass="media" name="livelist1" dataset="bind:Variables.Static_Product_data_Laptop.dataSet" margintop="20" paddingbottom="20" paddingright="20" paddingleft="20" paddingtop="20">
                 <wm-listtemplate layout="media" name="listtemplate1">
-                    <wm-container class="media-left" name="container1">
-                        <wm-picture class="media-object picture" shape="rounded" width="100" name="picture1" height="15em" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.Static_Product_data_Laptop.dataSet.imgUrl"></wm-picture>
+                    <wm-container class="media-left" name="container1" paddingright="10">
+                        <wm-picture class="media-object picture" shape="rounded" name="picture1" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.Static_Product_data_Laptop.dataSet.imgUrl"></wm-picture>
                     </wm-container>
                     <wm-container class="media-body" data-template-ctr="true" name="container2">
                         <wm-label width="100%" caption="bind:Variables.Static_Product_data_Laptop.dataSet.name" name="label7" fontsize="17" fontweight="bold" bordertop="5" paddingtop="10" paddingbottom="10"></wm-label>
@@ -47,7 +47,7 @@ var _Product_laptopsPage_Variables_ ={};
                         <wm-label width="100%" caption="bind:&quot;Price :$&quot;+Variables.Static_Product_data_Laptop.dataSet.price" name="label5" fontsize="17" fontweight="bold"></wm-label>
                         <wm-button class="btn-default" caption="Add to Cart" type="button" name="AddtoCart" iconclass="fa fa-cart-plus" backgroundcolor="#608ef1" fontsize="20" show="bind:Variables.Static_Product_data_Laptop.dataSet.availability"
                         on-click="InsertCart"></wm-button>
-                        <wm-label name="id" caption="bind:Variables.Static_Product_data_Laptop.dataSet.id"></wm-label>
+                        <wm-label name="id" caption="bind:Variables.Static_Product_data_Laptop.dataSet.id" show="false"></wm-label>
                     </wm-container>
                 </wm-listtemplate>
             </wm-livelist>

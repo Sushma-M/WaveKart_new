@@ -133,8 +133,7 @@
 		"_id": "wm-static_product_data_forsearch-Product-wm.LiveVariable-1449752030516",
 		"filterFields": {},
 		"tableName": "PRODUCT",
-		"tableType": "TABLE",
-		"$$hashKey": "object:1558"
+		"tableType": "TABLE"
 	},
 	"Static_Product_data": {
 		"name": "Static_Product_data",
@@ -239,8 +238,7 @@
 		],
 		"saveInPhonegap": false,
 		"category": "wm.Variable",
-		"_id": "wm-Static_Product_data-wm.Variable-1450076864751",
-		"$$hashKey": "object:1556"
+		"_id": "wm-Static_Product_data-wm.Variable-1450076864751"
 	},
 	"logoutVariable": {
 		"name": "logoutVariable",
@@ -253,8 +251,7 @@
 		"redirectTo": "index.html",
 		"useDefaultSuccessHandler": true,
 		"category": "wm.LogoutVariable",
-		"_id": "wm-logoutVariable-wm.LogoutVariable-1448969207396",
-		"$$hashKey": "object:1554"
+		"_id": "wm-logoutVariable-wm.LogoutVariable-1448969207396"
 	},
 	"EshoppingExecuteCancelled": {
 		"name": "EshoppingExecuteCancelled",
@@ -311,8 +308,7 @@
 		"serviceType": "DataService",
 		"category": "wm.ServiceVariable",
 		"_id": "wm-EshoppingExecuteCancelled-wm.ServiceVariable-1450089884879",
-		"isDefault": true,
-		"$$hashKey": "object:1543"
+		"isDefault": true
 	},
 	"goToPage_Product_search": {
 		"name": "goToPage_Product_search",
@@ -335,8 +331,7 @@
 		"dataBinding": [],
 		"saveInPhonegap": false,
 		"category": "wm.Variable",
-		"_id": "wm-hashredirect-wm.Variable-1450268290392",
-		"$$hashKey": "object:1550"
+		"_id": "wm-hashredirect-wm.Variable-1450268290392"
 	},
 	"goToPage_Orders": {
 		"name": "goToPage_Orders",
@@ -399,7 +394,8 @@
 							"length": 255,
 							"generator": "identity",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"isRelatedPk": "true"
 						},
 						{
 							"fieldName": "imgUrl",
@@ -412,7 +408,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "category",
@@ -425,7 +422,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "price",
@@ -438,7 +436,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "description",
@@ -451,7 +450,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "name",
@@ -464,7 +464,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "availability",
@@ -477,11 +478,13 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						}
 					],
 					"relatedFieldName": "product.id",
-					"isList": false
+					"isList": false,
+					"disableInlineEditing": "true"
 				},
 				{
 					"fieldName": "productorder",
@@ -509,7 +512,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": true,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "id",
@@ -522,7 +526,8 @@
 							"length": 255,
 							"generator": "identity",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"isRelatedPk": "true"
 						},
 						{
 							"fieldName": "status",
@@ -535,11 +540,13 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						}
 					],
 					"relatedFieldName": "productorder.id",
-					"isList": false
+					"isList": false,
+					"disableInlineEditing": "true"
 				},
 				{
 					"fieldName": "id",
@@ -600,8 +607,7 @@
 			"productorder"
 		],
 		"category": "wm.LiveVariable",
-		"tableType": "TABLE",
-		"$$hashKey": "object:1546"
+		"tableType": "TABLE"
 	},
 	"goToPage_Cart": {
 		"name": "goToPage_Cart",
@@ -743,8 +749,7 @@
 		"dbSystem": "HSQLDB",
 		"category": "wm.LiveVariable",
 		"filterFields": {},
-		"tableType": "TABLE",
-		"$$hashKey": "object:1547"
+		"tableType": "TABLE"
 	},
 	"goToPage_Main": {
 		"name": "goToPage_Main",
@@ -889,8 +894,7 @@
 		"_id": "wm-Product_obj-wm.LiveVariable-1450091071612",
 		"filterFields": {},
 		"tableName": "PRODUCT",
-		"tableType": "TABLE",
-		"$$hashKey": "object:1555"
+		"tableType": "TABLE"
 	},
 	"Static_Product_data_cam": {
 		"name": "Static_Product_data_cam",
@@ -995,8 +999,7 @@
 		],
 		"saveInPhonegap": false,
 		"category": "wm.Variable",
-		"_id": "wm-Static_Product_data_cam-wm.Variable-1450083692212",
-		"$$hashKey": "object:1557"
+		"_id": "wm-Static_Product_data_cam-wm.Variable-1450083692212"
 	},
 	"goToPage_Product_laptops": {
 		"name": "goToPage_Product_laptops",
@@ -1131,8 +1134,7 @@
 		],
 		"saveInPhonegap": false,
 		"category": "wm.Variable",
-		"_id": "wm-Static_Product_data_Laptop-wm.Variable-1450086660204",
-		"$$hashKey": "object:1559"
+		"_id": "wm-Static_Product_data_Laptop-wm.Variable-1450086660204"
 	},
 	"EshoppingProductorderData": {
 		"name": "EshoppingProductorderData",
@@ -1185,7 +1187,8 @@
 							"length": 255,
 							"generator": "identity",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"isRelatedPk": "true"
 						},
 						{
 							"fieldName": "landmark",
@@ -1198,7 +1201,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "phone",
@@ -1211,7 +1215,8 @@
 							"length": 15,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "pin",
@@ -1224,7 +1229,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "email",
@@ -1237,7 +1243,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "street",
@@ -1250,7 +1257,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "name",
@@ -1263,7 +1271,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "productBought",
@@ -1276,7 +1285,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "password",
@@ -1289,7 +1299,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "country",
@@ -1302,7 +1313,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "city",
@@ -1315,7 +1327,8 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "role",
@@ -1328,11 +1341,13 @@
 							"length": 255,
 							"generator": "assigned",
 							"isRelated": false,
-							"defaultValue": null
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						}
 					],
 					"relatedFieldName": "user.id",
-					"isList": false
+					"isList": false,
+					"disableInlineEditing": "true"
 				},
 				{
 					"fieldName": "id",
@@ -1385,8 +1400,7 @@
 			"user"
 		],
 		"category": "wm.LiveVariable",
-		"tableType": "TABLE",
-		"$$hashKey": "object:1548"
+		"tableType": "TABLE"
 	},
 	"loginVariable": {
 		"name": "loginVariable",
@@ -1417,8 +1431,7 @@
 		"onError": "Javascript",
 		"useDefaultSuccessHandler": false,
 		"category": "wm.LoginVariable",
-		"_id": "wm-loginVariable-wm.LoginVariable-1448969207395",
-		"$$hashKey": "object:1553"
+		"_id": "wm-loginVariable-wm.LoginVariable-1448969207395"
 	},
 	"InsertCart": {
 		"name": "InsertCart",
@@ -1823,8 +1836,7 @@
 		"inputFields": {},
 		"category": "wm.LiveVariable",
 		"filterFields": {},
-		"tableType": "TABLE",
-		"$$hashKey": "object:1551"
+		"tableType": "TABLE"
 	},
 	"user_obj": {
 		"name": "user_obj",
@@ -2024,8 +2036,7 @@
 		"_id": "wm-user_obj-wm.LiveVariable-1450092190771",
 		"filterFields": {},
 		"tableName": "USER",
-		"tableType": "TABLE",
-		"$$hashKey": "object:1561"
+		"tableType": "TABLE"
 	},
 	"EshoppingExecute_Total_Price": {
 		"name": "EshoppingExecute_Total_Price",
@@ -2083,8 +2094,7 @@
 		"serviceType": "DataService",
 		"category": "wm.ServiceVariable",
 		"_id": "wm-EshoppingExecute_Total_Price-wm.ServiceVariable-1450089838621",
-		"isDefault": true,
-		"$$hashKey": "object:1542"
+		"isDefault": true
 	},
 	"EshoppingUserData": {
 		"name": "EshoppingUserData",
@@ -2280,8 +2290,7 @@
 		"tableName": "USER",
 		"dbSystem": "HSQLDB",
 		"category": "wm.LiveVariable",
-		"tableType": "TABLE",
-		"$$hashKey": "object:1549"
+		"tableType": "TABLE"
 	},
 	"goToPage_Profile": {
 		"name": "goToPage_Profile",
@@ -2347,8 +2356,7 @@
 		"serviceType": "DataService",
 		"category": "wm.ServiceVariable",
 		"_id": "wm-EshoppingExecute_Total_InCart-wm.ServiceVariable-1450172698588",
-		"isDefault": true,
-		"$$hashKey": "object:1541"
+		"isDefault": true
 	},
 	"goToPage_Products": {
 		"name": "goToPage_Products",
@@ -2415,8 +2423,7 @@
 		"serviceType": "DataService",
 		"category": "wm.ServiceVariable",
 		"_id": "wm-EshoppingExecuteOrdered-wm.ServiceVariable-1450089641366",
-		"isDefault": true,
-		"$$hashKey": "object:1544"
+		"isDefault": true
 	},
 	"loggedInUser": {
 		"name": "loggedInUser",
@@ -2434,8 +2441,7 @@
 		"dataBinding": [],
 		"saveInPhonegap": false,
 		"category": "wm.Variable",
-		"_id": "wm-loggedInUser-wm.Variable-1448969207397",
-		"$$hashKey": "object:1552"
+		"_id": "wm-loggedInUser-wm.Variable-1448969207397"
 	},
 	"goToPage_Categories": {
 		"name": "goToPage_Categories",
@@ -2448,6 +2454,7 @@
 		"_id": "wm-goToPage_Categories-wm.NavigationVariable-1448960688452"
 	},
 	"EshoppingExecute_OrderedLists": {
+		"name": "EshoppingExecute_OrderedLists",
 		"type": "eshopping_OrderedListsrtnType",
 		"isList": false,
 		"owner": "App",
@@ -2502,9 +2509,7 @@
 				}
 			]
 		},
-		"_id": "wm-EshoppingExecute_OrderedLists-wm.ServiceVariable-1450702603666",
-		"name": "EshoppingExecute_OrderedLists",
-		"$$hashKey": "object:3600"
+		"_id": "wm-EshoppingExecute_OrderedLists-wm.ServiceVariable-1450702603666"
 	},
 	"EshoppingItemorderData": {
 		"name": "EshoppingItemorderData",
@@ -2889,8 +2894,7 @@
 		],
 		"category": "wm.LiveVariable",
 		"filterFields": {},
-		"tableType": "TABLE",
-		"$$hashKey": "object:1545"
+		"tableType": "TABLE"
 	},
 	"goToPage_Categories_accsries": {
 		"name": "goToPage_Categories_accsries",
@@ -2913,8 +2917,7 @@
 		"dataBinding": [],
 		"saveInPhonegap": false,
 		"category": "wm.Variable",
-		"_id": "wm-supportedLocale-wm.Variable1402640443182",
-		"$$hashKey": "object:1560"
+		"_id": "wm-supportedLocale-wm.Variable1402640443182"
 	},
 	"goToPage_Categories_periphrls": {
 		"name": "goToPage_Categories_periphrls",

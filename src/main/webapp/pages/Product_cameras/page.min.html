@@ -36,8 +36,8 @@ var _Product_camerasPage_Variables_ ={ }
         <wm-page-content columnwidth="10" name="page_content1">
             <wm-livelist listclass="media-list" itemclass="media" name="livelist1" dataset="bind:Variables.Static_Product_data_cam.dataSet" margintop="20" paddingbottom="20" paddingright="20" paddingleft="20" paddingtop="20">
                 <wm-listtemplate layout="media" name="listtemplate1">
-                    <wm-container class="media-left" name="container1">
-                        <wm-picture class="media-object picture" shape="rounded" width="100" name="picture1" height="15em" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.Static_Product_data_cam.dataSet.imgUrl"></wm-picture>
+                    <wm-container class="media-left" name="container1" paddingright="10">
+                        <wm-picture class="media-object picture" shape="rounded" name="picture1" picturesource="bind:&quot;http://wmstudio-apps.s3.amazonaws.com/eshop/Products/Thumbnails&quot;+Variables.Static_Product_data_cam.dataSet.imgUrl"></wm-picture>
                     </wm-container>
                     <wm-container class="media-body" data-template-ctr="true" name="container2">
                         <wm-label width="100%" caption="bind:Variables.Static_Product_data_cam.dataSet.name" name="label7" fontsize="17" fontweight="bold" bordertop="10" borderbottom="10" paddingtop="5" margintop="10" marginbottom="10"></wm-label>
